@@ -3290,6 +3290,60 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
   window.parts = new _parts_parts__WEBPACK_IMPORTED_MODULE_3__.Parts();
   window.parts.init();
 });
+var slidePage = document.querySelector(".slide-page");
+var nextBtnFirst = document.querySelector(".firstNext");
+var prevBtnSec = document.querySelector(".prev-1");
+var nextBtnSec = document.querySelector(".next-1");
+var prevBtnThird = document.querySelector(".prev-2");
+var nextBtnThird = document.querySelector(".next-2");
+var prevBtnFourth = document.querySelector(".prev-3");
+var submitBtn = document.querySelector(".submit");
+var current = 1;
+nextBtnFirst.addEventListener("click", function (event) {
+  event.preventDefault();
+  slidePage.style.marginLeft = "-25%";
+  current += 1;
+});
+nextBtnSec.addEventListener("click", function (event) {
+  event.preventDefault();
+  slidePage.style.marginLeft = "-50%";
+  current += 1;
+});
+nextBtnThird.addEventListener("click", function (event) {
+  event.preventDefault();
+  slidePage.style.marginLeft = "-75%";
+  current += 1;
+});
+submitBtn.addEventListener("click", function () {
+  current += 1;
+  setTimeout(function () {
+    location.reload();
+  }, 800);
+});
+prevBtnSec.addEventListener("click", function (event) {
+  event.preventDefault();
+  slidePage.style.marginLeft = "0%";
+  // bullet[current - 2].classList.remove("active");
+  // progressCheck[current - 2].classList.remove("active");
+  // progressText[current - 2].classList.remove("active");
+  current -= 1;
+});
+prevBtnThird.addEventListener("click", function (event) {
+  event.preventDefault();
+  slidePage.style.marginLeft = "-25%";
+  // bullet[current - 2].classList.remove("active");
+  // progressCheck[current - 2].classList.remove("active");
+  // progressText[current - 2].classList.remove("active");
+  current -= 1;
+});
+prevBtnFourth.addEventListener("click", function (event) {
+  event.preventDefault();
+  slidePage.style.marginLeft = "-50%";
+  // bullet[current - 2].classList.remove("active");
+  // progressCheck[current - 2].classList.remove("active");
+  // progressText[current - 2].classList.remove("active");
+  current -= 1;
+});
 
 /***/ }),
 

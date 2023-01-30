@@ -1,4 +1,15 @@
 {
     "/public/assets/js/main.js": "/public/assets/js/main.js",
-    "/public/assets/css/main.css": "/public/assets/css/main.css"
+    "/public/assets/css/main.css": "/public/assets/css/main.css",
+    "/public/assets/images/blur-rectangle.svg": "/public/assets/images/blur-rectangle.svg",
+    "/public/assets/images/blur-round.svg": "/public/assets/images/blur-round.svg",
+    "/public/assets/images/camera.svg": "/public/assets/images/camera.svg",
+    "/public/assets/images/dashboard-bg.svg": "/public/assets/images/dashboard-bg.svg",
+    "/public/assets/images/employee-female.svg": "/public/assets/images/employee-female.svg",
+    "/public/assets/images/logo.png": "/public/assets/images/logo.png",
+    "/public/assets/images/male-employee.svg": "/public/assets/images/male-employee.svg",
+    "/public/assets/images/profile-logo.svg": "/public/assets/images/profile-logo.svg",
+    "/public/assets/images/Rectangle.svg": "/public/assets/images/Rectangle.svg",
+    "/public/assets/images/round.svg": "/public/assets/images/round.svg",
+    "/public/assets/images/yellow-rectangle.svg": "/public/assets/images/yellow-rectangle.svg"
 }
