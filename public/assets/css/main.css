@@ -11568,7 +11568,10 @@ textarea.form-control-lg {
   position: relative;
 }
 .company-regi-main .small-round img {
-  position: absolute;
+  float: right;
+  margin-right: 20px;
+  height: 200px;
+  width: 200px;
 }
 .company-regi-main .progres-bar {
   display: flex;
@@ -11577,6 +11580,14 @@ textarea.form-control-lg {
   text-align: center;
   width: 100%;
   position: relative;
+}
+.company-regi-main .progres-bar .step p {
+  color: #AAAADD;
+  font-weight: 600;
+  font-size: 18px;
+}
+.company-regi-main .progres-bar .step p.active {
+  color: #000;
 }
 .company-regi-main .progres-bar .step .bullet {
   border: 2px solid #fff;
@@ -11600,7 +11611,7 @@ textarea.form-control-lg {
   left: 40px;
 }
 .company-regi-main .progres-bar .step .bullet::after {
-  background: #c2c2c2;
+  background: #AAAADD;
   transform-origin: left;
   animation: animate 0.3s linear forwards;
 }
@@ -11608,7 +11619,7 @@ textarea.form-control-lg {
   display: none;
 }
 .company-regi-main .progres-bar .step .bullet.active::after {
-  background: #380645;
+  background: #000;
   transform: scaleX(0);
   transform-origin: left;
   animation: animate 0.3s linear forwards;
@@ -11624,7 +11635,7 @@ textarea.form-control-lg {
 .company-regi-main .progres-bar .step .check {
   position: absolute;
   left: 50%;
-  top: 73%;
+  top: 65%;
   font-size: 16px;
   transform: translate(-50%, -50%);
   display: none;
@@ -11652,7 +11663,14 @@ textarea.form-control-lg {
 }
 .company-regi-main .step-form .form-outer {
   background: #ffffff;
+  border-radius: 5px;
   overflow: hidden;
+  border: 1px solid #F8F8F8;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.company-regi-main .step-form .form-outer .step-title h1, .company-regi-main .step-form .form-outer .step-title .h1 {
+  font-size: 47px;
+  font-weight: 700;
 }
 .company-regi-main .step-form .form-outer form {
   display: flex;
@@ -11662,7 +11680,23 @@ textarea.form-control-lg {
   width: 25%;
   transition: margin-left 0.3s ease-in-out;
 }
-.company-regi-main button {
+.company-regi-main .step-form .form-outer form .step-one .input-field .input-label label {
+  font-size: 18px;
+  color: #232323;
+  font-weight: 600;
+}
+.company-regi-main .step-form .form-outer form .step-one .input-field .input-box input {
+  border: 1px solid #F5F5F5;
+  box-shadow: 0px 2px 2px rgba(245, 245, 245, 0.25);
+  border-radius: 5px;
+  padding-left: 20px;
+  height: 45px;
+}
+.company-regi-main .step-form .form-outer form .step-one .input-field .input-box input:focus {
+  outline: none;
+}
+.company-regi-main .step-form .form-outer form .step-one .cancel {
+  width: 120px;
   background: #000000;
   color: #ffffff;
   font-size: 18px;
@@ -11671,7 +11705,17 @@ textarea.form-control-lg {
   border: 1px solid #000000;
   border-radius: 5px;
 }
-.company-regi-main .step-two .profile-pic .profile {
+.company-regi-main .step-form .form-outer form .step-one .firstNext {
+  width: 120px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  height: 45px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+.company-regi-main .step-form .form-outer form .step-two .profile-pic .profile {
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -11680,11 +11724,11 @@ textarea.form-control-lg {
      object-fit: contain;
   cursor: pointer;
 }
-.company-regi-main .step-two .profile-pic .camera {
+.company-regi-main .step-form .form-outer form .step-two .profile-pic .camera {
   left: 53%;
   cursor: pointer;
 }
-.company-regi-main .step-two .profile-pic input[type=file] {
+.company-regi-main .step-form .form-outer form .step-two .profile-pic .camera-input {
   cursor: pointer;
   display: block;
   height: 100%;
@@ -11693,6 +11737,144 @@ textarea.form-control-lg {
   position: absolute;
   top: 0;
   width: 100%;
+}
+.company-regi-main .step-form .form-outer form .step-two .input-field .input-label label {
+  font-size: 18px;
+  color: #232323;
+  font-weight: 600;
+}
+.company-regi-main .step-form .form-outer form .step-two .input-field .input-box input {
+  border: 1px solid #F5F5F5;
+  box-shadow: 0px 2px 2px rgba(245, 245, 245, 0.25);
+  border-radius: 5px;
+  padding-left: 20px;
+  height: 45px;
+}
+.company-regi-main .step-form .form-outer form .step-two .input-field .input-box input:focus {
+  outline: none;
+}
+.company-regi-main .step-form .form-outer form .step-two .next-1 {
+  background: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 45px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+.company-regi-main .step-form .form-outer form .step-two .previous-button {
+  padding-top: 150px;
+}
+.company-regi-main .step-form .form-outer form .step-two .previous-button .prev-1 {
+  background: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 45px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 120px;
+}
+.company-regi-main .step-form .form-outer form .step-three .input-field .input-label label {
+  font-size: 18px;
+  color: #232323;
+  font-weight: 600;
+}
+.company-regi-main .step-form .form-outer form .step-three .input-field .input-box input {
+  border: 1px solid #F5F5F5;
+  box-shadow: 0px 2px 2px rgba(245, 245, 245, 0.25);
+  border-radius: 5px;
+  padding-left: 20px;
+  height: 45px;
+}
+.company-regi-main .step-form .form-outer form .step-three .input-field .input-box input:focus {
+  outline: none;
+}
+.company-regi-main .step-form .form-outer form .step-three .confirm-button {
+  background: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 45px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+.company-regi-main .step-form .form-outer form .step-three .checkbox-main input {
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+  accent-color: #a677fa;
+}
+.company-regi-main .step-form .form-outer form .step-three .checkbox-main label {
+  font-size: 17px;
+  color: #232323;
+  font-weight: 600;
+}
+.company-regi-main .step-form .form-outer form .step-three .prev-2 {
+  background: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 45px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 120px;
+}
+.company-regi-main .step-form .form-outer form .step-three .next-2 {
+  background: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  height: 45px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 120px;
+}
+.company-regi-main .step-form .form-outer form .step-four .input-field .input-label label {
+  font-size: 18px;
+  color: #232323;
+  font-weight: 600;
+}
+.company-regi-main .step-form .form-outer form .step-four .input-field .input-box input {
+  border: 1px solid #F5F5F5;
+  box-shadow: 0px 2px 2px rgba(245, 245, 245, 0.25);
+  border-radius: 5px;
+  padding-left: 20px;
+  height: 45px;
+}
+.company-regi-main .step-form .form-outer form .step-four .input-field .input-box input:focus {
+  outline: none;
+}
+.company-regi-main .step-form .form-outer form .step-four .input-field .checkbox-main input {
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+  accent-color: #a677fa;
+}
+.company-regi-main .step-form .form-outer form .step-four .input-field .checkbox-main label {
+  font-size: 17px;
+  color: #232323;
+  font-weight: 600;
+}
+.company-regi-main .step-form .form-outer form .step-four .prev-3 {
+  background: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 45px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 120px;
+}
+.company-regi-main .step-form .form-outer form .step-four .submit {
+  background: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  height: 45px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 120px;
 }
 
 * {
