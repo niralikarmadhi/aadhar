@@ -21,12 +21,20 @@
 
     }
 
+    .blur-section{
+       .bg-layer-white{
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: $RadiusFive;
+        z-index:1;
+        backdrop-filter: blur(2px);
+       }
+    }
+
     .bg-hero {
         background-repeat: no-repeat;
         background-size: cover;
         padding: 100px 120px;
         border-radius: $radius-normal;
-        // box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 
         .hero-content {
             h3 {
@@ -44,6 +52,7 @@
             position: absolute;
             width: 100%;
             top: -290px;
+            z-index: 2;
         }
     }
 }

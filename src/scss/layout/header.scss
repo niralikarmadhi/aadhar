@@ -17,6 +17,10 @@ header{
         display:none;
     }
 
+    .black-user{
+        display:none;
+    }
+
     .navbar-nav{
         li{
             a{
@@ -25,16 +29,7 @@ header{
                 font-size:16px;
                 position: relative;
                 transition: all 0.3s ease-in-out;
-                &:hover{
-                    &::after{
-                        content:"";
-                        display: block;
-                        width:50px;
-                        height:2px;
-                        background-color: $white;
-                        position: absolute;
-                    }
-                }
+
             }
         }
     }
@@ -80,16 +75,20 @@ header{
         display:none;
     }
 
+    .black-user{
+        display:inline-block;
+    }
+
+    .white-user{
+        display:none;
+    }
+
 
     .navbar-nav{
         li{
             a{
                 color: $lightBlack !important;
-                &:hover{
-                    &::after{
-                        background-color: $lightBlack !important;
-                    }
-                }
+               
             }
         }
     }

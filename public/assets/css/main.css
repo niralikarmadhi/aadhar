@@ -11270,6 +11270,13 @@ textarea.form-control-lg {
   display: block;
   height: 72px;
 }
+.hero-section .blur-section .bg-layer-white {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
 .hero-section .bg-hero {
   background-repeat: no-repeat;
   background-size: cover;
@@ -11288,6 +11295,7 @@ textarea.form-control-lg {
   position: absolute;
   width: 100%;
   top: -290px;
+  z-index: 2;
 }
 
 .team-member {
@@ -11740,20 +11748,15 @@ header .logo-black {
 header .black-navbar {
   display: none;
 }
+header .black-user {
+  display: none;
+}
 header .navbar-nav li a {
   color: #ffffff !important;
   font-weight: 500;
   font-size: 16px;
   position: relative;
   transition: all 0.3s ease-in-out;
-}
-header .navbar-nav li a:hover::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 2px;
-  background-color: #ffffff;
-  position: absolute;
 }
 header .logo img {
   width: 100px;
@@ -11781,11 +11784,14 @@ header .user img {
 .header-fixed .white-navbar {
   display: none;
 }
+.header-fixed .black-user {
+  display: inline-block;
+}
+.header-fixed .white-user {
+  display: none;
+}
 .header-fixed .navbar-nav li a {
   color: #232323 !important;
-}
-.header-fixed .navbar-nav li a:hover::after {
-  background-color: #232323 !important;
 }
 
 footer {
