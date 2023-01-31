@@ -11536,7 +11536,8 @@ textarea.form-control-lg {
   border: 1px solid #F5F5F5;
   box-shadow: 0px 2px 2px rgba(245, 245, 245, 0.25);
   border-radius: 5px;
-  padding-left: 20px;
+  padding-left: 15px;
+  font-size: 16px;
   height: 45px;
 }
 .login-form-main .login-form .login-field .login-input input:focus {
@@ -11586,7 +11587,7 @@ textarea.form-control-lg {
   position: relative;
 }
 .company-regi-main .progres-bar .step p {
-  color: #AAAADD;
+  color: #AAA7BA;
   font-weight: 600;
   font-size: 18px;
 }
@@ -11600,7 +11601,7 @@ textarea.form-control-lg {
   position: relative;
   transition: 0.2s;
   font-weight: 500;
-  color: #AAAADD;
+  color: #AAA7BA;
   font-size: 14px;
   line-height: 30px;
   height: 30px;
@@ -11615,7 +11616,7 @@ textarea.form-control-lg {
   left: 40px;
 }
 .company-regi-main .progres-bar .step .bullet::after {
-  background: #AAAADD;
+  background: #AAA7BA;
   transform-origin: left;
   animation: animate 0.3s linear forwards;
 }
@@ -11666,7 +11667,7 @@ textarea.form-control-lg {
   background-color: #FADFA8;
 }
 .company-regi-main .step-form .form-outer {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .company-regi-main .step-form .form-outer .step-title h1, .company-regi-main .step-form .form-outer .step-title .h1 {
   font-size: 47px;
@@ -11680,12 +11681,13 @@ textarea.form-control-lg {
   width: 25%;
   transition: margin-left 0.3s ease-in-out;
 }
-.company-regi-main .step-form .form-outer form .step-one .login-input select {
+.company-regi-main .step-form .form-outer form .step-one .login-input .form-select {
   border: 1px solid #F5F5F5;
   box-shadow: 0px 2px 2px rgba(245, 245, 245, 0.25);
   border-radius: 5px;
   padding-left: 20px;
   height: 45px;
+  background-image: url("/src/images/right-arrow.png") !important;
 }
 .company-regi-main .step-form .form-outer form .step-two .profile-pic .profile {
   height: 100px;
@@ -11722,7 +11724,8 @@ textarea.form-control-lg {
   border: 1px solid #F5F5F5;
   box-shadow: 0px 2px 2px rgba(245, 245, 245, 0.25);
   border-radius: 5px;
-  padding-left: 20px;
+  padding-left: 15px;
+  font-size: 16px;
   height: 45px;
 }
 .company-regi-main .step-form .form-outer form .step-three .input-field .input-box input:focus {

@@ -17,7 +17,7 @@
             position: relative;
 
             p {
-                color: #AAAADD;
+                color: $secondary;
                 font-weight: 600;
                 font-size: 18px;
 
@@ -33,7 +33,7 @@
                 position: relative;
                 transition: 0.2s;
                 font-weight: 500;
-                color: #AAAADD;
+                color: $secondary;
                 font-size: 14px;
                 line-height: 30px;
                 height: 30px;
@@ -50,7 +50,7 @@
                 }
 
                 &::after {
-                    background: #AAAADD;
+                    background: $secondary;
                     transform-origin: left;
                     animation: animate 0.3s linear forwards;
                 }
@@ -130,7 +130,7 @@
 
     .step-form {
         .form-outer {
-            overflow: hidden;
+            overflow-x: hidden;
 
             .step-title {
                 h1 {
@@ -149,12 +149,13 @@
 
                 .step-one {
                     .login-input {
-                        select {
+                        .form-select {
                             border: 1px solid #F5F5F5;
                             box-shadow: 0px 2px 2px rgb(245 245 245 / 25%);
                             border-radius: 5px;
                             padding-left: 20px;
                             height: 45px;
+                            background-image: url('/src/images/right-arrow.png') !important;
                         }
                     }
 
