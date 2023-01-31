@@ -24,3 +24,18 @@
     height: 45px;
 
 }
+@mixin checkBox(){
+    height: 20px;
+    width: 20px;
+    border-radius: $RadiusTwo;
+    accent-color: $primary;
+}
+@mixin nextButton() {
+    background: $white;
+    color: $black;
+    font-size: $oneeightFont;
+    font-weight: $WeightSeven;
+    height: 45px;
+    border:1px solid $black;
+    border-radius: $RadiusFive;
+}

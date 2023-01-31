@@ -1,0 +1,335 @@
+.company-regi-main {
+    padding: 80px 0;
+    position: relative;
+
+    .small-round {
+        img {
+            float: right;
+            margin-right: 20px;
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+    .progres-bar {
+        display: flex;
+
+        .step {
+            text-align: center;
+            width: 100%;
+            position: relative;
+
+            p {
+                color: #AAAADD;
+                font-weight: 600;
+                font-size: 18px;
+
+                &.active {
+                    color: #000;
+                }
+            }
+
+            .bullet {
+                border: 2px solid #fff;
+                display: inline-block;
+                border-radius: 50%;
+                position: relative;
+                transition: 0.2s;
+                font-weight: 500;
+                color: #AAAADD;
+                font-size: 14px;
+                line-height: 30px;
+                height: 30px;
+                width: 30px;
+
+                &::after,
+                &::before {
+                    position: absolute;
+                    content: "";
+                    bottom: 10px;
+                    height: 2px;
+                    width: 100px;
+                    left: 40px;
+                }
+
+                &::after {
+                    background: #AAAADD;
+                    transform-origin: left;
+                    animation: animate 0.3s linear forwards;
+                }
+
+                &.active {
+                    span {
+                        display: none;
+                    }
+
+
+
+                    &::after {
+                        background: #000;
+                        transform: scaleX(0);
+                        transform-origin: left;
+                        animation: animate 0.3s linear forwards;
+                    }
+                }
+
+                @keyframes animate {
+                    100% {
+                        transform: scaleX(1);
+                    }
+                }
+
+            }
+
+            &:last-child {
+                .bullet {
+
+                    &::after,
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            .check {
+                position: absolute;
+                left: 50%;
+                top: 65%;
+                font-size: 16px;
+                transform: translate(-50%, -50%);
+                display: none;
+
+                &.active {
+                    display: block;
+
+                    span {
+                        font-size: 14px;
+                        line-height: 30px;
+                        color: #000;
+                        height: 30px;
+                    }
+                }
+
+            }
+
+            &:nth-child(1) .bullet {
+                background-color: #E2D2FE;
+            }
+
+            &:nth-child(2) .bullet {
+                background-color: #D3FDF9;
+            }
+
+            &:nth-child(3) .bullet {
+                background-color: #CCF0BF;
+            }
+
+            &:nth-child(4) .bullet {
+                background-color: #FADFA8;
+            }
+
+        }
+
+
+    }
+
+    .step-form {
+        .form-outer {
+            background: $white;
+            border-radius: $radius-normal;
+            overflow: hidden;
+            border: 1px solid #F8F8F8;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+            .step-title {
+                h1 {
+                    @include fontSize(47px);
+                }
+            }
+
+            form {
+                display: flex;
+                width: 400%;
+
+                .page {
+                    width: 25%;
+                    transition: margin-left 0.3s ease-in-out;
+                }
+
+                .step-one {
+                    .input-field {
+                        .input-label label {
+                            font-size: $oneeightFont;
+                            color: $lightBlack;
+                            font-weight: $WeightSix;
+                        }
+
+                        .input-box input {
+                            @include commonInput();
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                    }
+
+                    .cancel {
+                        width: 120px;
+                        @include commonButton();
+                    }
+
+                    .firstNext {
+                        width: 120px;
+
+                        @include nextButton();
+                    }
+                }
+
+                .step-two {
+                    .profile-pic {
+                        .profile {
+                            height: 100px;
+                            width: 100px;
+                            border-radius: 50%;
+                            min-width: 50px;
+                            object-fit: contain;
+                            cursor: pointer;
+                        }
+
+                        .camera {
+                            left: 53%;
+                            cursor: pointer;
+                        }
+
+                        .camera-input {
+                            cursor: pointer;
+                            display: block;
+                            height: 100%;
+                            left: 0;
+                            opacity: 0 !important;
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                        }
+                    }
+
+                    .input-field {
+                        .input-label label {
+                            font-size: $oneeightFont;
+                            color: $lightBlack;
+                            font-weight: $WeightSix;
+                        }
+
+                        .input-box input {
+                            @include commonInput();
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                    }
+
+                    .next-1 {
+                        @include commonButton();
+                    }
+
+                    .previous-button {
+                        padding-top: 150px;
+
+                        .prev-1 {
+
+                            @include commonButton();
+                            width: 120px;
+
+                        }
+                    }
+                }
+
+                .step-three {
+                    .input-field {
+                        .input-label label {
+                            font-size: $oneeightFont;
+                            color: $lightBlack;
+                            font-weight: $WeightSix;
+                        }
+
+                        .input-box input {
+                            @include commonInput();
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                    }
+
+                    .confirm-button {
+                        @include commonButton();
+                    }
+
+                    .checkbox-main {
+                        input {
+                            @include checkBox();
+                        }
+
+                        label {
+                            font-size: $onesevenFont;
+                            color: $lightBlack;
+                            font-weight: $WeightSix;
+                        }
+                    }
+
+                    .prev-2 {
+                        @include commonButton();
+                        width: 120px;
+                    }
+
+                    .next-2 {
+                        @include nextButton();
+                        width: 120px;
+                    }
+
+                }
+
+                .step-four {
+                    .input-field {
+                        .input-label label {
+                            font-size: $oneeightFont;
+                            color: $lightBlack;
+                            font-weight: $WeightSix;
+                        }
+
+                        .input-box input {
+                            @include commonInput();
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        .checkbox-main {
+                            input {
+                                @include checkBox();
+                            }
+
+                            label {
+                                font-size: $onesevenFont;
+                                color: $lightBlack;
+                                font-weight: $WeightSix;
+                            }
+                        }
+                    }
+
+                    .prev-3 {
+                        @include commonButton();
+                        width: 120px;
+                    }
+
+                    .submit {
+                        @include nextButton();
+                        width: 120px;
+                    }
+                }
+
+            }
+        }
+    }
+}
