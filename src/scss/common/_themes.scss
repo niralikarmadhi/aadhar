@@ -3,8 +3,36 @@
 }
 
 body{
-    background-color:#F8F8F8;
+    background-color:#fff;
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding:0;
+    overflow-X:hidden;
+}
+
+a{
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p, label{
+    margin-bottom: 0;
+}
+
+.theme-button{
+    background-color: $primary;
+    color: $white !important;
+    display: inline-block;
+    padding:15px 40px;
+    margin-top:20px;
+    border-radius: $radius-normal;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+    font-size:18px;
+    font-weight:400;
+
+    &:hover{
+        opacity: 1;
+    }
+
 }
