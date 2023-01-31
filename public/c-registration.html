@@ -16,389 +16,221 @@
 
 <body>
     <div class="company-regi-main ">
+        <div class="small-round">
+            <img src="/src/images/Ellipse 5.svg" alt="">
+        </div>
         <div class="container">
-            <!-- <div class="regi">
-                <div class="step-form">
-                    <div class="d-flex align-items-center regi-hello">
-                        <h3 class="mb-0 me-2">Hey ,Hello</h3>
+            <div class="row step-form">
+                <div class="col-md-3 col-12"></div>
+                <div class="form-outer col-md-6 col-12">
+                    <div class="ps-4 pt-4">
+                        <h1>Hey, Hello</h1>
                     </div>
-                    <div class="form-outer">
-                        <form action="#">
-                            <div class="step-one page slide-page ">
-                                <div>
-                                    <div><label for="">Company Name</label></div>
-                                    <div><input type="text" class="w-100"></div>
-                                </div>
-    
-                                <div>
-                                    <div><label for="">Company GST Number</label></div>
-                                    <div><input type="text" class="w-100"></div>
-                                </div>
-    
-                                <div>
-                                    <div><label for="">Company Pan Card Number</label></div>
-                                    <div><input type="text" class="w-100"></div>
-                                </div>
-    
-                                <div>
-                                    <div><label for="">Company Type</label></div>
-                                    <div><input type="text" class="w-100"></div>
-                                </div>
-                                <div class="d-flex align-items-center mt-3 justify-content-between">
-                                    <a href="#"><button>Cancel</button></a>
-                                    <button class="firstNext">Next</button>
-                                </div>
+                    <div class="progres-bar">
+                        <div class="step">
+                            <p>
+                                Name
+                            </p>
+                            <div class="bullet">
+                                <span>1</span>
                             </div>
-                            <div class="page">
-
-                                <div class="profile-pic text-center mt-4">
-                                    <img src="user 1.svg" alt="" class="user" id="wizardPicturePreview">
-                                    <img src="camera 1.svg" alt="" class="camera">
-                                    <input type="file" id="wizard-picture" class="">
-                                </div>
-                                <div class="aadhar-otp">
-                                    <div class="aadhar-label mb-2"> <label for="">Aadhar
-                                            Number</label></div>
-                                    <div class="d-flex align-items-center justify-content-between aadhar-number">
-                                        <input type="text" placeholder="0000"><input type="text"
-                                            placeholder="0000"><input type="text" placeholder="0000">
-                                    </div>
-                                </div>
-                                <div class="send-otp mt-5" id="send-otp">
-                                    <button onClick="ShowAndHide()">Send Otp</button>
-                                </div>
-                                <div id="confirm-otp" style="display:none">
-                                    <div class="enter-otp d-flex justify-content-between align-items-center mt-2 mb-2">
-                                        <label for="">Enter OTP</label>
-                                        <span timer id='timer' class=timer></span>
-                                    </div>
-                                    <div class="confirm-otp-input">
-                                        <input type="text" class="w-100 mb-3">
-                                    </div>
-                                    <div class="confirm-otp-button mb-3">
-                                        <button>Confirm OTP</button>
-                                    </div>
-                                    <div>
-                                        <div class="otp-label mb-3">
-                                            <label for="">We fetch details from Aadhaar
-                                                card.</label>
-                                        </div>
-                                        <div class="confirm-otp-check mb-2"><input type="checkbox" id="address">
-                                            <label for="address">Address</label>
-                                        </div>
-                                        <div class="confirm-otp-check mb-2"><input type="checkbox" id="birth">
-                                            <label for="birth">Date Of Birth</label>
-                                        </div>
-                                        <div class="confirm-otp-check mb-2"><input type="checkbox" id="gender">
-                                            <label for="gender">Gender</label>
-                                        </div>
-                                    </div>
-
-
-
-
-
-
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center sign-button mt-5 mb-3">
-                                    <button class="prev-1 sign-in">Prev</button>
-                                    <button class="next-1  next">Next</button>
-                                </div>
+                            <div class="check"><span>1</span></div>
+                        </div>
+                        <div class="step">
+                            <p>
+                                Contact
+                            </p>
+                            <div class="bullet">
+                                <span>2</span>
                             </div>
-                            <div class="page">
-
-                                <div class="mt-3 mb-2 company-address">
-                                    <div class="mb-2 address-label"><label for=""> Company Address
-                                        </label>
-                                    </div>
-                                    <div class="d-flex flex-wrap justify-content-between mb-2 c-address">
-                                        <input type="text" placeholder="Building Room No." class="room-no me-2">
-                                        <input type="text" placeholder="Locality" class="locality">
-                                    </div>
-                                    <div class="mb-2 add">
-                                        <input type="text" placeholder="Address 1">
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between mb-2 me-2 c-pin-add ">
-                                        <input type="text" placeholder="Pincode">
-                                        <input type="text" placeholder="City">
-                                        <input type="text" placeholder="State">
-                                    </div>
-                                </div>
-                                <div class="mt-3 mb-2 Aadhar-address">
-                                    <div class="mb-2  address-label"><label for=""> Aadhar Address
-                                        </label>
-                                    </div>
-                                    <div class="d-flex flex-wrap justify-content-between mb-2 c-address">
-                                        <input type="text" placeholder="Building Room No." class="room-no me-2">
-                                        <input type="text" placeholder="Locality" class="locality">
-                                    </div>
-                                    <div class="mb-2 add">
-                                        <input type="text" placeholder="Address 1">
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between mb-2 me-2 c-pin-add ">
-                                        <input type="text" placeholder="Pincode">
-                                        <input type="text" placeholder="City">
-                                        <input type="text" placeholder="State">
-                                    </div>
-                                </div>
-
-                                <div class="mt-3 mb-2 current-address">
-                                    <div class="mb-2 d-flex justify-content-between address-label">
-                                        <label for="">
-                                            Current Address
-                                        </label>
-                                        <div class="d-flex align-items-center aadhar-check"><input type="checkbox"
-                                                id="same-as" checked class="me-1"><label for="same-as">Same As
-                                                Aadhar</label></div>
-                                    </div>
-                                    <div class="d-flex flex-wrap justify-content-between mb-3 c-address">
-                                        <input type="text" placeholder="Building Room No." class="room-no me-2">
-                                        <input type="text" placeholder="Locality" class="locality">
-                                    </div>
-                                    <div class="mb-2 add">
-                                        <input type="text" placeholder="Address 1">
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between me-2 c-pin-add ">
-                                        <input type="text" placeholder="Pincode">
-                                        <input type="text" placeholder="City">
-                                        <input type="text" placeholder="State">
-                                    </div>
-
-
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center sign-button mt-4 mb-2">
-                                    <button class="prev-2 sign-in">Prev</button>
-                                    <button class="next-2 next">Next</button>
-                                </div>
-
+                            <div class="check"><span>2</span></div>
+                        </div>
+                        <div class="step">
+                            <p>
+                                Birth
+                            </p>
+                            <div class="bullet">
+                                <span>3</span>
                             </div>
-                            <div class="page">
-                                
-                                    <div class="email-add mb-3">
-                                        <div class="email-add-label mb-2"><label for="">Email
-                                                Address</label></div>
-                                        <div class="email-add-input"><input type="text"></div>
-                                    </div>
-                                    <div class="email-add mb-3">
-                                        <div class="email-add-label  mb-2"><label for="">Mobile
-                                                No</label></div>
-                                        <div class="email-add-input"><input type="text" value="+91">
-                                        </div>
-                                    </div>
-                                    <div class="email-add mb-3">
-                                        <div class="email-add-label  mb-2"><label for="">Date Of
-                                                Birth</label></div>
-                                        <div class="email-add-input"><input type="date">
-                                        </div>
-                                    </div>
-                                    <div class="email-add mb-3">
-                                        <div class="email-add-label  mb-2"><label for="">Gender</label>
-                                        </div>
-                                        <div class="email-add-input"><select name="" id="">
-                                                <option value=""></option>
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
-                                            </select></div>
-                                    </div>
-                                    <div class="email-add mb-3 ">
-                                        <div class="email-add-label  mb-2"><label for="">Password (Min 8
-                                                Character)</label>
-                                        </div>
-                                        <div class="email-add-input"><input type="text"></div>
-                                    </div>
-
-                               
-                                <div class="d-flex justify-content-between align-items-center sign-button mt-4 mb-2">
-                                    <button class="prev-3 sign-in">Prev</button>
-                                    <button class="submit next">Register</button>
-                                </div>
+                            <div class="check "> <span>3</span>
                             </div>
-                        </form>
-                    </div>
-                </div>
-            </div> -->
-
-            <div class="step-form">
-                <div class="form-outer">
-                    <div class="text-center">
-                        <h1>Hello</h1>
+                        </div>
+                        <div class="step">
+                            <p>
+                                Submit
+                            </p>
+                            <div class="bullet">
+                                <span>4</span>
+                            </div>
+                            <div class="check"><span>4</span>
+                            </div>
+                        </div>
                     </div>
                     <form action="#">
-                        <div class="step-one page slide-page">
-                            <div class="w-50 mx-auto">
-                                <div>
-                                    <div><label for="">Company Name</label></div>
-                                    <div><input type="text" class="w-100"></div>
-                                </div>
-
-                                <div>
-                                    <div><label for="">Company GST Number</label></div>
-                                    <div><input type="text" class="w-100"></div>
-                                </div>
-
-                                <div>
-                                    <div><label for="">Company Pan Card Number</label></div>
-                                    <div><input type="text" class="w-100"></div>
-                                </div>
-
-                                <div>
-                                    <div><label for="">Company Type</label></div>
-                                    <div><input type="text" class="w-100"></div>
-                                </div>
-                                <div class="d-flex align-items-center mt-3 justify-content-between">
-                                    <a href="#"><button>Cancel</button></a>
-                                    <button class="firstNext">Next</button>
-                                </div>
+                        <div class="step-one page slide-page p-4">
+                            <div>
+                                <div><label for="">Company Name</label></div>
+                                <div><input type="text" class="w-100"></div>
+                            </div>
+                            <div>
+                                <div><label for="">Company GST Number</label></div>
+                                <div><input type="text" class="w-100"></div>
+                            </div>
+                            <div>
+                                <div><label for="">Company Pan Card Number</label></div>
+                                <div><input type="text" class="w-100"></div>
+                            </div>
+                            <div>
+                                <div><label for="">Company Type</label></div>
+                                <div><input type="text" class="w-100"></div>
+                            </div>
+                            <div class="d-flex align-items-center mt-3 justify-content-between">
+                                <a href="#"><button>Cancel</button></a>
+                                <button class="firstNext">Next</button>
                             </div>
                         </div>
-                        <div class="step-two page">
-                            <div class="w-50 mx-auto">
-                                <div class="text-center position-relative">
-                                    <img src="/src/images/profile-logo.svg" alt="" class="profile">
-                                    <img src="/src/images/camera.svg" alt="" class="position-absolute bottom-0 camera">
-                                </div>
-
-                                <div>
-                                    <div><label for="">Aadhar Number</label></div>
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <input type="text" class="w-100">
-                                        </div>
-                                        <div class="col-4">
-                                            <input type="text" class="w-100">
-                                        </div>
-                                        <div class="col-4">
-                                            <input type="text" class="w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-3">
-                                    <button class="w-100 next-1">send OTP</button>
-                                </div>
-                                <div class="mt-3 text-center">
-                                    <button class="prev-1">Prev</button>
-                                </div>
+                        <div class="step-two page p-4">
+                            <div class="text-center profile-pic position-relative">
+                                <img src="/src/images/profile-logo.svg" alt="" class="profile"
+                                    id="wizardPicturePreview">
+                                <img src="/src/images/camera.svg" alt="" class="position-absolute bottom-0 camera">
+                                <input type="file" id="wizard-picture" class="">
                             </div>
-                        </div>
-                        <div class="step-three page">
-                            <div class="w-50 mx-auto">
-                                <div>
-                                    <div><label for="">Aadhar Number</label></div>
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <input type="text" class="w-100">
-                                        </div>
-                                        <div class="col-4">
-                                            <input type="text" class="w-100">
-                                        </div>
-                                        <div class="col-4">
-                                            <input type="text" class="w-100">
-                                        </div>
+                            <div>
+                                <div><label for="">Aadhar Number</label></div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <input type="text" class="w-100">
                                     </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <label for="">
-                                            Enter OTP
-                                        </label>
-                                        <label for="">
-                                            0:53
-                                        </label>
+                                    <div class="col-4">
+                                        <input type="text" class="w-100">
                                     </div>
-                                    <div>
+                                    <div class="col-4">
                                         <input type="text" class="w-100">
                                     </div>
                                 </div>
-                                <div class="mt-3">
-                                    <button class="w-100">Confirm OTP</button>
-                                </div>
-                                <div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div><input type="checkbox" name="" id="fetch">
-                                            <label for="fetch">We fetch details from Aadhaar card.</label>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div><input type="checkbox" name="" id="add">
-                                            <label for="add">Aadhar Card Address</label>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div><input type="checkbox" name="" id="birth">
-                                            <label for="birth">Date of Birth</label>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div><input type="checkbox" name="" id="gender">
-                                            <label for="gender">Gender</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="d-flex align-items-center mt-3 justify-content-between">
-                                    <a href="#"><button class="prev-2">Cancel</button></a>
-                                    <a href="#"><button class="next-2">Next</button></a>
-                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="w-100 next-1">send OTP</button>
+                            </div>
+                            <div class="mt-3 text-center">
+                                <button class="prev-1">Prev</button>
                             </div>
                         </div>
-                        <div class="step-four page">
-                            <div class="w-50 mx-auto">
-                                <div>
-                                    <div><label for="">Company Address</label></div>
-                                    <div class="row">
-                                        <div class="col-4"><input type="text" class="w-100"></div>
-                                        <div class="col-8"><input type="text" class="w-100"></div>
+                        <div class="step-three page p-4">
+                            <div>
+                                <div><label for="">Aadhar Number</label></div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <input type="text" class="w-100">
                                     </div>
-                                    <div class="mt-1"><input type="text" class="w-100"></div>
-
-
-                                    <div class="row mt-1">
-                                        <div class="col-4"><input type="text" class="w-100"></div>
-                                        <div class="col-4"><input type="text" class="w-100"></div>
-                                        <div class="col-4"><input type="text" class="w-100"></div>
+                                    <div class="col-4">
+                                        <input type="text" class="w-100">
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="text" class="w-100">
                                     </div>
                                 </div>
-                                <div>
-                                    <div><label for="">Aadhar Address</label></div>
-                                    <div class="row">
-                                        <div class="col-4"><input type="text" class="w-100"></div>
-                                        <div class="col-8"><input type="text" class="w-100"></div>
-                                    </div>
-                                    <div class="mt-1"><input type="text" class="w-100"></div>
-                                    <div class="row mt-1">
-                                        <div class="col-4"><input type="text" class="w-100"></div>
-                                        <div class="col-4"><input type="text" class="w-100"></div>
-                                        <div class="col-4"><input type="text" class="w-100"></div>
-                                    </div>
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <label for="">
+                                        Enter OTP
+                                    </label>
+                                    <label for="">
+                                        0:53
+                                    </label>
                                 </div>
                                 <div>
+                                    <input type="text" class="w-100">
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="w-100">Confirm OTP</button>
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div><input type="checkbox" name="" id="fetch">
+                                        <label for="fetch">We fetch details from Aadhaar card.</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div><input type="checkbox" name="" id="add">
+                                        <label for="add">Aadhar Card Address</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div><input type="checkbox" name="" id="birth">
+                                        <label for="birth">Date of Birth</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div><input type="checkbox" name="" id="gender">
+                                        <label for="gender">Gender</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-3 justify-content-between">
+                                <a href="#"><button class="prev-2">Cancel</button></a>
+                                <a href="#"><button class="next-2">Next</button></a>
+                            </div>
+
+                        </div>
+                        <div class="step-four page p-4">
+                            <div>
+                                <div><label for="">Company Address</label></div>
+                                <div class="row">
+                                    <div class="col-4"><input type="text" class="w-100"></div>
+                                    <div class="col-8"><input type="text" class="w-100"></div>
+                                </div>
+                                <div class="mt-1"><input type="text" class="w-100"></div>
+                                <div class="row mt-1">
+                                    <div class="col-4"><input type="text" class="w-100"></div>
+                                    <div class="col-4"><input type="text" class="w-100"></div>
+                                    <div class="col-4"><input type="text" class="w-100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div><label for="">Aadhar Address</label></div>
+                                <div class="row">
+                                    <div class="col-4"><input type="text" class="w-100"></div>
+                                    <div class="col-8"><input type="text" class="w-100"></div>
+                                </div>
+                                <div class="mt-1"><input type="text" class="w-100"></div>
+                                <div class="row mt-1">
+                                    <div class="col-4"><input type="text" class="w-100"></div>
+                                    <div class="col-4"><input type="text" class="w-100"></div>
+                                    <div class="col-4"><input type="text" class="w-100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <label for="">Current Address</label>
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <label for="">Current Address</label>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <input type="checkbox" name="" id="current">
-                                            <label for="current">Current Address</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-4"><input type="text" class="w-100"></div>
-                                        <div class="col-8"><input type="text" class="w-100"></div>
-                                    </div>
-                                    <div class="mt-1"><input type="text" class="w-100"></div>
-
-                                    <div class="row mt-1">
-                                        <div class="col-4"><input type="text" class="w-100"></div>
-                                        <div class="col-4"><input type="text" class="w-100"></div>
-                                        <div class="col-4"><input type="text" class="w-100"></div>
+                                        <input type="checkbox" name="" id="same">
+                                        <label for="same">Same as Aadhar</label>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-center mt-3 justify-content-between">
-                                    <a href="#"><button class="prev-3">Cancel</button></a>
-                                    <a href="#"><button class="submit">register</button></a>
+                                <div class="row">
+                                    <div class="col-4"><input type="text" class="w-100"></div>
+                                    <div class="col-8"><input type="text" class="w-100"></div>
                                 </div>
+                                <div class="mt-1"><input type="text" class="w-100"></div>
+                                <div class="row mt-1">
+                                    <div class="col-4"><input type="text" class="w-100"></div>
+                                    <div class="col-4"><input type="text" class="w-100"></div>
+                                    <div class="col-4"><input type="text" class="w-100"></div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-3 justify-content-between">
+                                <a href="#"><button class="prev-3">Cancel</button></a>
+                                <a href="#"><button class="submit">register</button></a>
                             </div>
                         </div>
                     </form>
                 </div>
+                <div class="col-md-3 col-12"></div>
             </div>
         </div>
     </div>
