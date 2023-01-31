@@ -129,3 +129,20 @@ label {
         opacity: 1;
     }
 }
+
+
+
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+
+  ::-webkit-scrollbar-thumb {
+    background: #f8f8f8; 
+  }
+  
