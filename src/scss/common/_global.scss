@@ -281,107 +281,102 @@
 
 }
 
+
 .login-form-main {
-    padding-top: 30px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f8f8f8;
 
-    .login-dashboard-main {
-        h1 {
-            @include fontSize(48px);
-            width: 350px;
-            padding: 20px;
-        }
+    .lady-section {
+        .title-main {
+            font-weight: 600;
+            font-size: 45px;
 
-        .login-dashboard-img {
-            height: calc(100vh - 20vh);
-
-            @include media-breakpoint-down (sm) {
-                height: 600px;
-            }
-
-            .round-img {
-                @include width();
-                z-index: -1;
-                height: 600px;
-            }
-
-            .emp-img {
-                height: 100%;
-                object-fit: cover;
-                padding-top: 45px;
-                @include width();
+            span {
+                display: block;
             }
         }
     }
 
-    .form-main {
-        padding: 60px;
 
-        @media (max-width: 500px) {
-            padding: 20px;
+    .login-form {
+        padding: 20px;
+        max-width: 100%;
+        width: 600px;
+        background: $white;
+        margin: 0 auto;
+        position: relative;
+        border-radius: $RadiusFive;
+
+        .hey-hello{
+            h3{
+                font-size:48px;
+                font-weight:700;
+                color: $lightBlack;
+
+            }
+            p{
+                color: $secondary;
+                font-size:20px;
+                font-weight:600;
+
+            }
         }
 
-        .login-form {
-            padding: 20px;
-            max-width: 100%;
-            width: 500px;
-            background: $white;
-            margin: 0 auto;
+        .login-title h3 {
+            @include fontSize(48px);
+        }
 
-            .login-title h3 {
-                @include fontSize(48px);
+        .login-line p {
+            font-size: $oneeightFont;
+            font-weight: 600;
+            color: $grayColor;
+        }
+
+        .login-field {
+            .login-label label {
+                font-size: 20px;
+                font-weight: 600;
+                color: $lightBlack;
             }
 
-            .login-line p {
+            .login-input input {
+                @include commonInput();
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .remember-checkbox {
+            input {
+                height: 20px;
+                width: 20px;
+                border-radius: $RadiusTwo;
+                accent-color: $primary;
+            }
+
+        }
+
+        .login-button {
+        
+            border-bottom: 2px solid $borderColor;
+
+        }
+
+        .register {
+            a {
+                color: #000;
                 font-size: $oneeightFont;
                 font-weight: 600;
-                color: $grayColor;
-            }
-
-            .login-feild {
-                .login-label label {
-                    font-size: 20px;
-                    font-weight: 600;
-                    color: $lightBlack;
-                }
-
-                .login-input input {
-                    @include commonInput();
-
-                    &:focus {
-                        outline: none;
-                    }
-                }
-            }
-
-            .remember-checkbox {
-                input {
-                    height: 20px;
-                    width: 20px;
-                    border-radius: $RadiusTwo;
-                    accent-color: $primary;
-                }
-
-            }
-
-            .login-button {
-                padding: 45px 0;
-                border-bottom: 2px solid $borderColor;
-
-                button {
-                    @include commonButton();
-                }
-            }
-
-            .register {
-                a {
-                    color: #000;
-                    font-size: $oneeightFont;
-                    font-weight: 600;
-                }
             }
         }
     }
+
 }
+
+
 
 .join-us {
     padding: 80px 0;
@@ -405,12 +400,13 @@
 .company-regi-main {
     padding: 80px 0;
     position: relative;
-    
-    .small-round{
-        img{
+
+    .small-round {
+        img {
             position: absolute;
         }
     }
+
     .progres-bar {
         display: flex;
 

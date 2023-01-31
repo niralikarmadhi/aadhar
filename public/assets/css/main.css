@@ -11472,93 +11472,70 @@ textarea.form-control-lg {
 }
 
 .login-form-main {
-  padding-top: 30px;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f8f8f8;
 }
-.login-form-main .login-dashboard-main h1, .login-form-main .login-dashboard-main .h1 {
-  font-size: 48px;
-  font-weight: 700;
-  width: 350px;
-  padding: 20px;
+.login-form-main .lady-section .title-main {
+  font-weight: 600;
+  font-size: 45px;
 }
-.login-form-main .login-dashboard-main .login-dashboard-img {
-  height: 80vh;
+.login-form-main .lady-section .title-main span {
+  display: block;
 }
-@media (max-width: 575.98px) {
-  .login-form-main .login-dashboard-main .login-dashboard-img {
-    height: 600px;
-  }
-}
-.login-form-main .login-dashboard-main .login-dashboard-img .round-img {
-  width: 100%;
-  z-index: -1;
-  height: 600px;
-}
-.login-form-main .login-dashboard-main .login-dashboard-img .emp-img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding-top: 45px;
-  width: 100%;
-}
-.login-form-main .form-main {
-  padding: 60px;
-}
-@media (max-width: 500px) {
-  .login-form-main .form-main {
-    padding: 20px;
-  }
-}
-.login-form-main .form-main .login-form {
+.login-form-main .login-form {
   padding: 20px;
   max-width: 100%;
-  width: 500px;
+  width: 600px;
   background: #ffffff;
   margin: 0 auto;
+  position: relative;
+  border-radius: 5px;
 }
-.login-form-main .form-main .login-form .login-title h3, .login-form-main .form-main .login-form .login-title .h3 {
+.login-form-main .login-form .hey-hello h3, .login-form-main .login-form .hey-hello .h3 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #232323;
+}
+.login-form-main .login-form .hey-hello p {
+  color: #AAA7BA;
+  font-size: 20px;
+  font-weight: 600;
+}
+.login-form-main .login-form .login-title h3, .login-form-main .login-form .login-title .h3 {
   font-size: 48px;
   font-weight: 700;
 }
-.login-form-main .form-main .login-form .login-line p {
+.login-form-main .login-form .login-line p {
   font-size: 18px;
   font-weight: 600;
   color: #AAA7BA;
 }
-.login-form-main .form-main .login-form .login-feild .login-label label {
+.login-form-main .login-form .login-field .login-label label {
   font-size: 20px;
   font-weight: 600;
   color: #232323;
 }
-.login-form-main .form-main .login-form .login-feild .login-input input {
+.login-form-main .login-form .login-field .login-input input {
   border: 1px solid #F5F5F5;
   box-shadow: 0px 2px 2px rgba(245, 245, 245, 0.25);
   border-radius: 5px;
   padding-left: 20px;
   height: 45px;
 }
-.login-form-main .form-main .login-form .login-feild .login-input input:focus {
+.login-form-main .login-form .login-field .login-input input:focus {
   outline: none;
 }
-.login-form-main .form-main .login-form .remember-checkbox input {
+.login-form-main .login-form .remember-checkbox input {
   height: 20px;
   width: 20px;
   border-radius: 2px;
   accent-color: #a677fa;
 }
-.login-form-main .form-main .login-form .login-button {
-  padding: 45px 0;
+.login-form-main .login-form .login-button {
   border-bottom: 2px solid #F5F5F5;
 }
-.login-form-main .form-main .login-form .login-button button {
-  background: #000000;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 45px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-}
-.login-form-main .form-main .login-form .register a {
+.login-form-main .login-form .register a {
   color: #000;
   font-size: 18px;
   font-weight: 600;
