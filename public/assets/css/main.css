@@ -11352,6 +11352,13 @@ textarea.form-control-lg {
   margin-bottom: 80px;
   position: relative;
 }
+.search-section .blur-section .bg-layer-white {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
 .search-section .round-position {
   position: absolute;
   top: -180px;
@@ -11392,6 +11399,7 @@ textarea.form-control-lg {
   position: absolute;
   width: 100%;
   top: -350px;
+  z-index: 1;
 }
 
 .testimonial {
@@ -11894,7 +11902,19 @@ a {
   cursor: pointer;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, label {
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+label {
   margin-bottom: 0;
 }
 
@@ -11912,6 +11932,56 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, label {
 }
 .theme-button:hover {
   opacity: 1;
+}
+
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #232323;
+}
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #a677fa;
+}
+.container-checkbox input:checked ~ .checkmark::after {
+  display: block;
+}
+.container-checkbox .checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 2px;
+}
+.container-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 header {
