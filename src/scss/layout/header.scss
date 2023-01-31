@@ -84,10 +84,10 @@ header{
     .navbar-nav{
         li{
             a{
-                color: $primary !important;
+                color: $lightBlack !important;
                 &:hover{
                     &::after{
-                        background-color: $primary !important;
+                        background-color: $lightBlack !important;
                     }
                 }
             }

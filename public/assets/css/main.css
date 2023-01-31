@@ -11278,7 +11278,7 @@ textarea.form-control-lg {
 }
 .hero-section .bg-hero .hero-content h3, .hero-section .bg-hero .hero-content .h3 {
   font-size: 50px;
-  color: #a677fa;
+  color: #232323;
   line-height: 65px;
 }
 .hero-section .bg-hero .hero-content h3 b, .hero-section .bg-hero .hero-content .h3 b {
@@ -11298,7 +11298,7 @@ textarea.form-control-lg {
   margin-bottom: 20px;
 }
 .team-member .main-title h3, .team-member .main-title .h3 {
-  color: #a677fa;
+  color: #232323;
   font-size: 30px;
   font-weight: 700;
   margin-top: 20px;
@@ -11317,7 +11317,7 @@ textarea.form-control-lg {
      object-fit: cover;
 }
 .team-member .team-slider .single-team-member a h5, .team-member .team-slider .single-team-member a .h5 {
-  color: #a677fa;
+  color: #232323;
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
@@ -11374,7 +11374,7 @@ textarea.form-control-lg {
 }
 .search-section .bg-hero .hero-content h3, .search-section .bg-hero .hero-content .h3 {
   font-size: 50px;
-  color: #a677fa;
+  color: #232323;
   line-height: 65px;
 }
 .search-section .bg-hero .hero-content h3 b, .search-section .bg-hero .hero-content .h3 b {
@@ -11392,7 +11392,7 @@ textarea.form-control-lg {
   background-color: #CCF0BF;
 }
 .testimonial .testimonial-content h3, .testimonial .testimonial-content .h3 {
-  color: #a677fa;
+  color: #232323;
   font-size: 24px;
   font-weight: 600;
 }
@@ -11403,12 +11403,12 @@ textarea.form-control-lg {
 }
 .testimonial .testimonial-content .testimonial-details h5, .testimonial .testimonial-content .testimonial-details .h5 {
   font-size: 20px;
-  color: #a677fa;
+  color: #232323;
   font-weight: 700;
 }
 .testimonial .testimonial-content .testimonial-details p {
   font-size: 14px;
-  color: #a677fa;
+  color: #232323;
   font-weight: 500;
 }
 
@@ -11445,7 +11445,7 @@ textarea.form-control-lg {
   opacity: 1;
 }
 .hero-main .bg-find-services {
-  background-color: #a677fa;
+  background-color: #232323;
   height: 650px;
   padding: 150px 60px 0 60px;
 }
@@ -11574,7 +11574,7 @@ textarea.form-control-lg {
   margin-bottom: 20px;
 }
 .join-us .main-title h3, .join-us .main-title .h3 {
-  color: #a677fa;
+  color: #232323;
   font-size: 30px;
   font-weight: 700;
   margin-top: 20px;
@@ -11639,7 +11639,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, label {
 }
 
 .theme-button {
-  background-color: #a677fa;
+  background-color: #232323;
   color: #ffffff !important;
   display: inline-block;
   padding: 15px 40px;
@@ -11712,14 +11712,14 @@ header .user img {
   display: none;
 }
 .header-fixed .navbar-nav li a {
-  color: #a677fa !important;
+  color: #232323 !important;
 }
 .header-fixed .navbar-nav li a:hover::after {
-  background-color: #a677fa !important;
+  background-color: #232323 !important;
 }
 
 footer {
-  background-color: #a677fa;
+  background-color: #232323;
   padding: 80px 0 0 0;
 }
 footer .title-main {
