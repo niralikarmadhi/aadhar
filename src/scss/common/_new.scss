@@ -1,7 +1,4 @@
 .company-regi-main {
-    padding: 80px 0;
-    position: relative;
-
     .small-round {
         img {
             float: right;
@@ -62,8 +59,6 @@
                     span {
                         display: none;
                     }
-
-
 
                     &::after {
                         background: #000;
@@ -135,11 +130,7 @@
 
     .step-form {
         .form-outer {
-            background: $white;
-            border-radius: $radius-normal;
             overflow: hidden;
-            border: 1px solid #F8F8F8;
-            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
             .step-title {
                 h1 {
@@ -157,32 +148,16 @@
                 }
 
                 .step-one {
-                    .input-field {
-                        .input-label label {
-                            font-size: $oneeightFont;
-                            color: $lightBlack;
-                            font-weight: $WeightSix;
+                    .login-input {
+                        select {
+                            border: 1px solid #F5F5F5;
+                            box-shadow: 0px 2px 2px rgb(245 245 245 / 25%);
+                            border-radius: 5px;
+                            padding-left: 20px;
+                            height: 45px;
                         }
-
-                        .input-box input {
-                            @include commonInput();
-                            &:focus {
-                                outline: none;
-                            }
-                        }
-
                     }
 
-                    .cancel {
-                        width: 120px;
-                        @include commonButton();
-                    }
-
-                    .firstNext {
-                        width: 120px;
-
-                        @include nextButton();
-                    }
                 }
 
                 .step-two {
@@ -213,39 +188,13 @@
                         }
                     }
 
-                    .input-field {
-                        .input-label label {
-                            font-size: $oneeightFont;
-                            color: $lightBlack;
-                            font-weight: $WeightSix;
-                        }
-
-                        .input-box input {
-                            @include commonInput();
-                            &:focus {
-                                outline: none;
-                            }
-                        }
-
-                    }
-
-                    .next-1 {
-                        @include commonButton();
-                    }
-
                     .previous-button {
                         padding-top: 150px;
-
-                        .prev-1 {
-
-                            @include commonButton();
-                            width: 120px;
-
-                        }
                     }
                 }
 
                 .step-three {
+
                     .input-field {
                         .input-label label {
                             font-size: $oneeightFont;
@@ -255,6 +204,7 @@
 
                         .input-box input {
                             @include commonInput();
+
                             &:focus {
                                 outline: none;
                             }
@@ -271,61 +221,34 @@
                             @include checkBox();
                         }
 
+                        input:checked {
+                            accent-color: $primary;
+                        }
+
                         label {
                             font-size: $onesevenFont;
                             color: $lightBlack;
                             font-weight: $WeightSix;
                         }
                     }
-
-                    .prev-2 {
-                        @include commonButton();
-                        width: 120px;
-                    }
-
-                    .next-2 {
-                        @include nextButton();
-                        width: 120px;
-                    }
-
                 }
 
                 .step-four {
-                    .input-field {
-                        .input-label label {
-                            font-size: $oneeightFont;
+
+                    .checkbox-main {
+                        input {
+                            @include checkBox();
+                        }
+
+                        input:checked {
+                            accent-color: $primary;
+                        }
+
+                        label {
+                            font-size: $onesevenFont;
                             color: $lightBlack;
                             font-weight: $WeightSix;
                         }
-
-                        .input-box input {
-                            @include commonInput();
-                            &:focus {
-                                outline: none;
-                            }
-                        }
-
-                        .checkbox-main {
-                            input {
-                                @include checkBox();
-                            }
-
-                            label {
-                                font-size: $onesevenFont;
-                                color: $lightBlack;
-                                font-weight: $WeightSix;
-                            }
-                        }
-                    }
-
-                    .prev-3 {
-                        @include commonButton();
-                        width: 120px;
-                    }
-
-                    .submit {
-                        @include nextButton();
-                        width: 120px;
                     }
                 }
 

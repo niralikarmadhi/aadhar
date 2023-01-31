@@ -11563,10 +11563,6 @@ textarea.form-control-lg {
   text-transform: uppercase;
 }
 
-.company-regi-main {
-  padding: 80px 0;
-  position: relative;
-}
 .company-regi-main .small-round img {
   float: right;
   margin-right: 20px;
@@ -11662,11 +11658,7 @@ textarea.form-control-lg {
   background-color: #FADFA8;
 }
 .company-regi-main .step-form .form-outer {
-  background: #ffffff;
-  border-radius: 5px;
   overflow: hidden;
-  border: 1px solid #F8F8F8;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 .company-regi-main .step-form .form-outer .step-title h1, .company-regi-main .step-form .form-outer .step-title .h1 {
   font-size: 47px;
@@ -11680,40 +11672,12 @@ textarea.form-control-lg {
   width: 25%;
   transition: margin-left 0.3s ease-in-out;
 }
-.company-regi-main .step-form .form-outer form .step-one .input-field .input-label label {
-  font-size: 18px;
-  color: #232323;
-  font-weight: 600;
-}
-.company-regi-main .step-form .form-outer form .step-one .input-field .input-box input {
+.company-regi-main .step-form .form-outer form .step-one .login-input select {
   border: 1px solid #F5F5F5;
   box-shadow: 0px 2px 2px rgba(245, 245, 245, 0.25);
   border-radius: 5px;
   padding-left: 20px;
   height: 45px;
-}
-.company-regi-main .step-form .form-outer form .step-one .input-field .input-box input:focus {
-  outline: none;
-}
-.company-regi-main .step-form .form-outer form .step-one .cancel {
-  width: 120px;
-  background: #000000;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 45px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-}
-.company-regi-main .step-form .form-outer form .step-one .firstNext {
-  width: 120px;
-  background: #ffffff;
-  color: #000000;
-  font-size: 18px;
-  font-weight: 700;
-  height: 45px;
-  border: 1px solid #000000;
-  border-radius: 5px;
 }
 .company-regi-main .step-form .form-outer form .step-two .profile-pic .profile {
   height: 100px;
@@ -11738,42 +11702,8 @@ textarea.form-control-lg {
   top: 0;
   width: 100%;
 }
-.company-regi-main .step-form .form-outer form .step-two .input-field .input-label label {
-  font-size: 18px;
-  color: #232323;
-  font-weight: 600;
-}
-.company-regi-main .step-form .form-outer form .step-two .input-field .input-box input {
-  border: 1px solid #F5F5F5;
-  box-shadow: 0px 2px 2px rgba(245, 245, 245, 0.25);
-  border-radius: 5px;
-  padding-left: 20px;
-  height: 45px;
-}
-.company-regi-main .step-form .form-outer form .step-two .input-field .input-box input:focus {
-  outline: none;
-}
-.company-regi-main .step-form .form-outer form .step-two .next-1 {
-  background: #000000;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 45px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-}
 .company-regi-main .step-form .form-outer form .step-two .previous-button {
   padding-top: 150px;
-}
-.company-regi-main .step-form .form-outer form .step-two .previous-button .prev-1 {
-  background: #000000;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 45px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  width: 120px;
 }
 .company-regi-main .step-form .form-outer form .step-three .input-field .input-label label {
   font-size: 18px;
@@ -11803,6 +11733,9 @@ textarea.form-control-lg {
   height: 20px;
   width: 20px;
   border-radius: 2px;
+  background-color: #F5F5F5;
+}
+.company-regi-main .step-form .form-outer form .step-three .checkbox-main input:checked {
   accent-color: #a677fa;
 }
 .company-regi-main .step-form .form-outer form .step-three .checkbox-main label {
@@ -11810,71 +11743,19 @@ textarea.form-control-lg {
   color: #232323;
   font-weight: 600;
 }
-.company-regi-main .step-form .form-outer form .step-three .prev-2 {
-  background: #000000;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 45px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  width: 120px;
-}
-.company-regi-main .step-form .form-outer form .step-three .next-2 {
-  background: #ffffff;
-  color: #000000;
-  font-size: 18px;
-  font-weight: 700;
-  height: 45px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  width: 120px;
-}
-.company-regi-main .step-form .form-outer form .step-four .input-field .input-label label {
-  font-size: 18px;
-  color: #232323;
-  font-weight: 600;
-}
-.company-regi-main .step-form .form-outer form .step-four .input-field .input-box input {
-  border: 1px solid #F5F5F5;
-  box-shadow: 0px 2px 2px rgba(245, 245, 245, 0.25);
-  border-radius: 5px;
-  padding-left: 20px;
-  height: 45px;
-}
-.company-regi-main .step-form .form-outer form .step-four .input-field .input-box input:focus {
-  outline: none;
-}
-.company-regi-main .step-form .form-outer form .step-four .input-field .checkbox-main input {
+.company-regi-main .step-form .form-outer form .step-four .checkbox-main input {
   height: 20px;
   width: 20px;
   border-radius: 2px;
+  background-color: #F5F5F5;
+}
+.company-regi-main .step-form .form-outer form .step-four .checkbox-main input:checked {
   accent-color: #a677fa;
 }
-.company-regi-main .step-form .form-outer form .step-four .input-field .checkbox-main label {
+.company-regi-main .step-form .form-outer form .step-four .checkbox-main label {
   font-size: 17px;
   color: #232323;
   font-weight: 600;
-}
-.company-regi-main .step-form .form-outer form .step-four .prev-3 {
-  background: #000000;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 45px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  width: 120px;
-}
-.company-regi-main .step-form .form-outer form .step-four .submit {
-  background: #ffffff;
-  color: #000000;
-  font-size: 18px;
-  font-weight: 700;
-  height: 45px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  width: 120px;
 }
 
 * {
@@ -11911,6 +11792,23 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, label {
   font-weight: 400;
 }
 .theme-button:hover {
+  opacity: 1;
+}
+
+.theme-next-button {
+  background-color: #ffffff;
+  color: #000000 !important;
+  display: inline-block;
+  padding: 15px 40px;
+  margin-top: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  font-weight: 400;
+}
+.theme-next-button:hover {
   opacity: 1;
 }
 
@@ -12059,4 +11957,12 @@ footer .credit-new a {
 }
 footer .credit-new a:hover {
   opacity: 1;
+}
+
+input[type=checkbox] {
+  background-color: #CCF0BF;
+}
+
+.logo-checkbox input {
+  background-color: #000;
 }
