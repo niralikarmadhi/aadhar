@@ -12019,11 +12019,11 @@ footer input {
   box-shadow: none;
 }
 footer input::-moz-placeholder {
-  color: #a677fa;
+  color: #232323;
   opacity: 0.5;
 }
 footer input::placeholder {
-  color: #a677fa;
+  color: #232323;
   opacity: 0.5;
 }
 footer .play-button {
