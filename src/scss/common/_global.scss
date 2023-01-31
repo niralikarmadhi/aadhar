@@ -1,5 +1,5 @@
 .login-form-main {
-    padding: 30px 0;
+    padding-top: 30px;
 
     .login-dashboard-main {
         h1 {
@@ -9,7 +9,7 @@
         }
 
         .login-dashboard-img {
-            height: 700px;
+            height: calc(100vh - 20vh);
 
             @include media-breakpoint-down (sm) {
                 height: 600px;
@@ -22,13 +22,10 @@
             }
 
             .emp-img {
-                height: 800px;
+                height: 100%;
+                object-fit: cover;
+                padding-top: 45px;
                 @include width();
-                z-index: -1;
-
-                @media (max-width: 525px) {
-                    height: 700px;
-                }
             }
         }
     }
@@ -104,14 +101,136 @@
 }
 
 .company-regi-main {
-    background: $white;
+    padding: 80px 0;
+    position: relative;
+.small-round{
+    img{
+        position: absolute;
+    }
+}
+    .progres-bar {
+        display: flex;
+
+        .step {
+            text-align: center;
+            width: 100%;
+            position: relative;
+
+
+
+            .bullet {
+                border: 2px solid #fff;
+                display: inline-block;
+                border-radius: 50%;
+                position: relative;
+                transition: 0.2s;
+                font-weight: 500;
+                color: #AAAADD;
+                font-size: 14px;
+                line-height: 30px;
+                height: 30px;
+                width: 30px;
+
+                &::after,
+                &::before {
+                    position: absolute;
+                    content: "";
+                    bottom: 10px;
+                    height: 2px;
+                    width: 100px;
+                    left: 40px;
+                }
+
+                &::after {
+                    background: #c2c2c2;
+                    transform-origin: left;
+                    animation: animate 0.3s linear forwards;
+                }
+
+                &.active {
+                    span {
+                        display: none;
+                    }
+
+                    &::after {
+                        background: #380645;
+                        transform: scaleX(0);
+                        transform-origin: left;
+                        animation: animate 0.3s linear forwards;
+
+                    }
+                }
+
+                @keyframes animate {
+                    100% {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+
+            &:last-child {
+                .bullet {
+
+                    &::after,
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            .check {
+                position: absolute;
+                left: 50%;
+                top: 73%;
+                font-size: 16px;
+                transform: translate(-50%, -50%);
+                display: none;
+
+                &.active {
+                    display: block;
+
+                    span {
+                        font-size: 14px;
+                        line-height: 30px;
+                        color: #000;
+                        height: 30px;
+                    }
+                }
+
+            }
+
+            &:nth-child(1) .bullet {
+                background-color: #E2D2FE;
+            }
+
+            &:nth-child(2) .bullet {
+                background-color: #D3FDF9;
+            }
+
+            &:nth-child(3) .bullet {
+                background-color: #CCF0BF;
+            }
+
+            &:nth-child(4) .bullet {
+                background-color: #FADFA8;
+            }
+
+        }
+
+
+    }
+
     .step-form {
         .form-outer {
-            width: 100%;
+
+            background: $white;
+
             overflow: hidden;
+
             form {
                 display: flex;
                 width: 400%;
+
                 .page {
                     width: 25%;
                     transition: margin-left 0.3s ease-in-out;
@@ -119,24 +238,37 @@
             }
         }
     }
+
     button {
         @include commonButton();
     }
 
-   
-
     .step-two {
-        .profile {
-            height: 100px;
-            width: 100px;
-            border-radius: 50%;
-            min-width: 50px;
-            cursor: pointer;
-        }
+        .profile-pic {
+            .profile {
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                min-width: 50px;
+                object-fit: contain;
+                cursor: pointer;
+            }
 
-        .camera {
-            left: 53%;
-            cursor: pointer;
+            .camera {
+                left: 53%;
+                cursor: pointer;
+            }
+
+            input[type="file"] {
+                cursor: pointer;
+                display: block;
+                height: 100%;
+                left: 0;
+                opacity: 0 !important;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
         }
     }
 }

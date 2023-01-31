@@ -11143,7 +11143,7 @@ textarea.form-control-lg {
 }
 
 .login-form-main {
-  padding: 30px 0;
+  padding-top: 30px;
 }
 .login-form-main .login-dashboard-main h1, .login-form-main .login-dashboard-main .h1 {
   font-size: 48px;
@@ -11152,7 +11152,7 @@ textarea.form-control-lg {
   padding: 20px;
 }
 .login-form-main .login-dashboard-main .login-dashboard-img {
-  height: 700px;
+  height: 80vh;
 }
 @media (max-width: 575.98px) {
   .login-form-main .login-dashboard-main .login-dashboard-img {
@@ -11165,14 +11165,11 @@ textarea.form-control-lg {
   height: 600px;
 }
 .login-form-main .login-dashboard-main .login-dashboard-img .emp-img {
-  height: 800px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 45px;
   width: 100%;
-  z-index: -1;
-}
-@media (max-width: 525px) {
-  .login-form-main .login-dashboard-main .login-dashboard-img .emp-img {
-    height: 700px;
-  }
 }
 .login-form-main .form-main {
   padding: 60px;
@@ -11239,10 +11236,94 @@ textarea.form-control-lg {
 }
 
 .company-regi-main {
-  background: #ffffff;
+  padding: 80px 0;
+  position: relative;
+}
+.company-regi-main .small-round img {
+  position: absolute;
+}
+.company-regi-main .progres-bar {
+  display: flex;
+}
+.company-regi-main .progres-bar .step {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.company-regi-main .progres-bar .step .bullet {
+  border: 2px solid #fff;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  color: #AAAADD;
+  font-size: 14px;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+}
+.company-regi-main .progres-bar .step .bullet::after, .company-regi-main .progres-bar .step .bullet::before {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  height: 2px;
+  width: 100px;
+  left: 40px;
+}
+.company-regi-main .progres-bar .step .bullet::after {
+  background: #c2c2c2;
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+.company-regi-main .progres-bar .step .bullet.active span {
+  display: none;
+}
+.company-regi-main .progres-bar .step .bullet.active::after {
+  background: #380645;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.company-regi-main .progres-bar .step:last-child .bullet::after, .company-regi-main .progres-bar .step:last-child .bullet::before {
+  display: none;
+}
+.company-regi-main .progres-bar .step .check {
+  position: absolute;
+  left: 50%;
+  top: 73%;
+  font-size: 16px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.company-regi-main .progres-bar .step .check.active {
+  display: block;
+}
+.company-regi-main .progres-bar .step .check.active span {
+  font-size: 14px;
+  line-height: 30px;
+  color: #000;
+  height: 30px;
+}
+.company-regi-main .progres-bar .step:nth-child(1) .bullet {
+  background-color: #E2D2FE;
+}
+.company-regi-main .progres-bar .step:nth-child(2) .bullet {
+  background-color: #D3FDF9;
+}
+.company-regi-main .progres-bar .step:nth-child(3) .bullet {
+  background-color: #CCF0BF;
+}
+.company-regi-main .progres-bar .step:nth-child(4) .bullet {
+  background-color: #FADFA8;
 }
 .company-regi-main .step-form .form-outer {
-  width: 100%;
+  background: #ffffff;
   overflow: hidden;
 }
 .company-regi-main .step-form .form-outer form {
@@ -11262,16 +11343,28 @@ textarea.form-control-lg {
   border: 1px solid #000000;
   border-radius: 5px;
 }
-.company-regi-main .step-two .profile {
+.company-regi-main .step-two .profile-pic .profile {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   min-width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
   cursor: pointer;
 }
-.company-regi-main .step-two .camera {
+.company-regi-main .step-two .profile-pic .camera {
   left: 53%;
   cursor: pointer;
+}
+.company-regi-main .step-two .profile-pic input[type=file] {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0 !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 * {

@@ -3298,23 +3298,38 @@ var prevBtnThird = document.querySelector(".prev-2");
 var nextBtnThird = document.querySelector(".next-2");
 var prevBtnFourth = document.querySelector(".prev-3");
 var submitBtn = document.querySelector(".submit");
+var progressText = document.querySelectorAll(".step p");
+var progressCheck = document.querySelectorAll(".step .check");
+var bullet = document.querySelectorAll(".step .bullet");
 var current = 1;
 nextBtnFirst.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-25%";
+  bullet[current - 1].classList.add("active");
+  progressCheck[current - 1].classList.add("active");
+  progressText[current - 1].classList.add("active");
   current += 1;
 });
 nextBtnSec.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-50%";
+  bullet[current - 1].classList.add("active");
+  progressCheck[current - 1].classList.add("active");
+  progressText[current - 1].classList.add("active");
   current += 1;
 });
 nextBtnThird.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-75%";
+  bullet[current - 1].classList.add("active");
+  progressCheck[current - 1].classList.add("active");
+  progressText[current - 1].classList.add("active");
   current += 1;
 });
 submitBtn.addEventListener("click", function () {
+  bullet[current - 1].classList.add("active");
+  progressCheck[current - 1].classList.add("active");
+  progressText[current - 1].classList.add("active");
   current += 1;
   setTimeout(function () {
     location.reload();
@@ -3323,27 +3338,44 @@ submitBtn.addEventListener("click", function () {
 prevBtnSec.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "0%";
-  // bullet[current - 2].classList.remove("active");
-  // progressCheck[current - 2].classList.remove("active");
-  // progressText[current - 2].classList.remove("active");
+  bullet[current - 2].classList.remove("active");
+  progressCheck[current - 2].classList.remove("active");
+  progressText[current - 2].classList.remove("active");
   current -= 1;
 });
 prevBtnThird.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-25%";
-  // bullet[current - 2].classList.remove("active");
-  // progressCheck[current - 2].classList.remove("active");
-  // progressText[current - 2].classList.remove("active");
+  bullet[current - 2].classList.remove("active");
+  progressCheck[current - 2].classList.remove("active");
+  progressText[current - 2].classList.remove("active");
   current -= 1;
 });
 prevBtnFourth.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-50%";
-  // bullet[current - 2].classList.remove("active");
-  // progressCheck[current - 2].classList.remove("active");
-  // progressText[current - 2].classList.remove("active");
+  bullet[current - 2].classList.remove("active");
+  progressCheck[current - 2].classList.remove("active");
+  progressText[current - 2].classList.remove("active");
   current -= 1;
 });
+
+// Profile Picture
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()("#wizard-picture").change(function () {
+    readURL(this);
+  });
+});
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#wizardPicturePreview').attr('src', e.target.result).fadeIn('slow');
+    };
+    reader.readAsDataURL(input.files[0]);
+  }
+}
 
 /***/ }),
 
