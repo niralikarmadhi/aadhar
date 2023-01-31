@@ -3398,11 +3398,16 @@ function Delete2() {
 
 // Start the typing effect on load
 _INTERVAL_VAL2 = setInterval(Type2, 150);
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).scroll(function () {
-  var sticky = jquery__WEBPACK_IMPORTED_MODULE_0___default()('header'),
-    scroll = jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).scrollTop();
-  if (scroll >= 50) sticky.addClass('header-fixed');else sticky.removeClass('header-fixed');
-});
+
+// $(window).scroll(function(){
+//     var sticky = $('header'),
+//         scroll = $(window).scrollTop();
+
+//     if (scroll >= 50) sticky.addClass('header-fixed');
+//     else sticky.removeClass('header-fixed');
+
+// });
+
 var slidePage = document.querySelector(".slide-page");
 var nextBtnFirst = document.querySelector(".firstNext");
 var prevBtnSec = document.querySelector(".prev-1");
@@ -3529,6 +3534,16 @@ var App = /*#__PURE__*/function () {
         cssEase: 'linear',
         prevArrow: $(".slider--prev"),
         nextArrow: $(".slider--next")
+      });
+      $('.lady-slider').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        slidesToShow: 1,
+        fade: true,
+        speed: 500,
+        cssEase: 'linear'
       });
       $('.testimonial-slider').slick({
         dots: false,

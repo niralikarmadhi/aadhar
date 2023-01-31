@@ -14,6 +14,17 @@ export class App {
             nextArrow: $(".slider--next"),
           });
 
+          $('.lady-slider').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            autoplay: true,
+            slidesToShow: 1,
+            fade: true,
+            speed: 500,
+            cssEase: 'linear',
+          });
+
           $('.testimonial-slider').slick({
             dots: false,
             arrows: true,

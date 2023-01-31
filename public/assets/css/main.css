@@ -11590,6 +11590,7 @@ textarea.form-control-lg {
   color: #AAA7BA;
   font-weight: 600;
   font-size: 18px;
+  margin-bottom: 10px !important;
 }
 .company-regi-main .progres-bar .step p.active {
   color: #000;
@@ -11602,15 +11603,15 @@ textarea.form-control-lg {
   transition: 0.2s;
   font-weight: 500;
   color: #AAA7BA;
-  font-size: 14px;
-  line-height: 30px;
-  height: 30px;
-  width: 30px;
+  font-size: 16px;
+  line-height: 37px;
+  height: 40px;
+  width: 40px;
 }
 .company-regi-main .progres-bar .step .bullet::after, .company-regi-main .progres-bar .step .bullet::before {
   position: absolute;
   content: "";
-  bottom: 10px;
+  bottom: 20px;
   height: 2px;
   width: 100px;
   left: 40px;

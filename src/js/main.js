@@ -153,14 +153,14 @@ function Delete2() {
 _INTERVAL_VAL2 = setInterval(Type2, 150);
 
 
-$(window).scroll(function(){
-    var sticky = $('header'),
-        scroll = $(window).scrollTop();
+// $(window).scroll(function(){
+//     var sticky = $('header'),
+//         scroll = $(window).scrollTop();
 
-    if (scroll >= 50) sticky.addClass('header-fixed');
-    else sticky.removeClass('header-fixed');
+//     if (scroll >= 50) sticky.addClass('header-fixed');
+//     else sticky.removeClass('header-fixed');
 
-});
+// });
 
 
 const slidePage = document.querySelector(".slide-page");

@@ -134,7 +134,7 @@
                                 Choose Right and Dedicated Employee for your
                                 Company.
                             </p>
-                            <a href="#">Add Details</a>
+                            <a href="c-registration.html">Add Details</a>
                         </div>
                     </div>
                 </div>
@@ -178,7 +178,7 @@
                                 <div class="hero-content text-end">
                                     <h3>Update Your<b>Profile</b></h3>
                                     <a
-                                        href="#"
+                                        href="c-registration.html"
                                         class="theme-button radius-normal"
                                         >Add Details</a
                                     >
@@ -473,5 +473,14 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            $(window).scroll(function () {
+                var sticky = $("header"),
+                    scroll = $(window).scrollTop();
+
+                if (scroll >= 50) sticky.addClass("header-fixed");
+                else sticky.removeClass("header-fixed");
+            });
+        </script>
     </body>
 </html>
