@@ -50,7 +50,7 @@
 
 .team-member {
     margin-top: 80px;
-    margin-bottom:80px;
+    margin-bottom: 80px;
 
     .main-title {
         margin-bottom: 20px;
@@ -104,10 +104,11 @@
     }
 }
 
-.view-all-team{
-    background-color:#CCF0BF;
-    padding:80px 0;
-    h3{
+.view-all-team {
+    background-color: #CCF0BF;
+    padding: 80px 0;
+
+    h3 {
         font-size: 50px;
         color: $primary;
         line-height: 65px;
@@ -116,13 +117,13 @@
 
 .search-section {
     margin-top: 180px;
-    margin-bottom:80px;
+    margin-bottom: 80px;
     position: relative;
 
-    .round-position{
+    .round-position {
         position: absolute;
-        top:-180px;
-        width:200px;
+        top: -180px;
+        width: 200px;
         right: 50px;
     }
 
@@ -171,71 +172,73 @@
     }
 }
 
-.testimonial{
-    padding-top:80px;
-    padding-bottom:80px;
+.testimonial {
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: #CCF0BF;
 
-    .testimonial-content{
-        h3{
+    .testimonial-content {
+        h3 {
             color: $primary;
             font-size: 24px;
             font-weight: 600;
         }
 
-        .testimonial-details{
-            img{
-                width:60px;
-                height:60px;
-                border-radius:5px;
+        .testimonial-details {
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 5px;
             }
 
-            h5{
-                font-size:20px;
+            h5 {
+                font-size: 20px;
                 color: $primary;
-                font-weight:700;
+                font-weight: 700;
             }
 
-            p{
-                font-size:14px;
+            p {
+                font-size: 14px;
                 color: $primary;
-                font-weight:500;
+                font-weight: 500;
             }
         }
     }
 }
 
-.hero-main{
-    .main-slider{
-        .main-bg{
-            height:650px;
+.hero-main {
+    .main-slider {
+        .main-bg {
+            height: 650px;
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center center ;
+            background-position: center center;
 
-            .inner-hero{
-                padding-top:250px;
+            .inner-hero {
+                padding-top: 250px;
                 text-align: center;
 
-                h3{
+                h3 {
                     color: $white;
-                    font-size:65px;
-                    font-weight:700;
+                    font-size: 65px;
+                    font-weight: 700;
                     position: relative;
                 }
-                a{
+
+                a {
                     text-transform: uppercase;
                     color: $white;
-                    font-size:14px;
+                    font-size: 14px;
                     text-align: center;
                     position: relative;
-                    opacity:0.5;
+                    opacity: 0.5;
                     letter-spacing: 2.6px;
                     display: block;
-                    margin-top:20px;
-                    font-weight:600;
+                    margin-top: 20px;
+                    font-weight: 600;
                     transition: all 0.3s ease-in-out;
-                    &:hover{
+
+                    &:hover {
                         opacity: 1;
                     }
                 }
@@ -243,39 +246,148 @@
         }
     }
 
-    .bg-find-services{
+    .bg-find-services {
         background-color: $primary;
-        height:650px;
-        padding:150px 60px 0 60px;
-        h3{
+        height: 650px;
+        padding: 150px 60px 0 60px;
+
+        h3 {
             color: $white;
-            font-size:40px;
-            margin-bottom:20px;
+            font-size: 40px;
+            margin-bottom: 20px;
         }
 
-        p{
+        p {
             color: $white;
-            font-size:16px;
-            margin-bottom:20px;
-            
+            font-size: 16px;
+            margin-bottom: 20px;
+
         }
 
-        a{
+        a {
             background-color: transparent;
             color: $white;
             border: 1px solid #fff;
             display: block;
-            padding:15px 20px;
+            padding: 15px 20px;
             text-align: center;
-            margin-bottom:30px;
+            margin-bottom: 30px;
             border-radius: 5px;
-            margin-bottom:40px;
+            margin-bottom: 40px;
+
+        }
+
+    }
+
+}
+
+.login-form-main {
+    padding: 30px 0;
+
+    .login-dashboard-main {
+        h1 {
+            @include fontSize(48px);
+            width: 350px;
+            padding: 20px;
+        }
+
+        .login-dashboard-img {
+            height: 700px;
+
+            @include media-breakpoint-down (sm) {
+                height: 600px;
+            }
+
+            .round-img {
+                @include width();
+                z-index: -1;
+                height: 600px;
+            }
+
+            .emp-img {
+                height: 800px;
+                @include width();
+                z-index: -1;
+
+                @media (max-width: 525px) {
+                    height: 700px;
+                }
+            }
+        }
+    }
+
+    .form-main {
+        padding: 60px;
+
+        @media (max-width: 500px) {
+            padding: 20px;
+        }
+
+        .login-form {
+            padding: 20px;
+            max-width: 100%;
+            width: 500px;
+            background: $white;
+            margin: 0 auto;
+
+            .login-title h3 {
+                @include fontSize(48px);
+            }
+
+            .login-line p {
+                font-size: $oneeightFont;
+                font-weight: 600;
+                color: $grayColor;
+            }
+
+            .login-feild {
+                .login-label label {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $lightBlack;
+                }
+
+                .login-input input {
+                    @include commonInput();
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .remember-checkbox {
+                input {
+                    height: 20px;
+                    width: 20px;
+                    border-radius: $RadiusTwo;
+                    accent-color: $primary;
+                }
+
+            }
+
+            .login-button {
+                padding: 45px 0;
+                border-bottom: 2px solid $borderColor;
+
+                button {
+                    @include commonButton();
+                }
+            }
+
+            .register {
+                a {
+                    color: #000;
+                    font-size: $oneeightFont;
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
 
 .join-us {
-    padding:80px 0;
+    padding: 80px 0;
 
     .main-title {
         margin-bottom: 20px;
@@ -286,6 +398,51 @@
             font-weight: 700;
             margin-top: 20px;
             text-transform: uppercase;
+
+        }
+
+    }
+}
+
+
+.company-regi-main {
+    background: $white;
+
+    .step-form {
+        .form-outer {
+            width: 100%;
+            overflow: hidden;
+
+            form {
+                display: flex;
+                width: 400%;
+
+                .page {
+                    width: 25%;
+                    transition: margin-left 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+
+    button {
+        @include commonButton();
+    }
+
+
+
+    .step-two {
+        .profile {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            min-width: 50px;
+            cursor: pointer;
+        }
+
+        .camera {
+            left: 53%;
+            cursor: pointer;
         }
     }
 }

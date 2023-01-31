@@ -12,6 +12,7 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1400px
 );
+@import "./common/mixin";
 
 @import "components/slick";
 @import "common/_global";
