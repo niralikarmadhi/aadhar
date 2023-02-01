@@ -21,13 +21,13 @@
 
     }
 
-    .blur-section{
-       .bg-layer-white{
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: $RadiusFive;
-        z-index:1;
-        backdrop-filter: blur(2px);
-       }
+    .blur-section {
+        .bg-layer-white {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: $RadiusFive;
+            z-index: 1;
+            backdrop-filter: blur(2px);
+        }
     }
 
     .bg-hero {
@@ -129,14 +129,14 @@
     margin-bottom: 80px;
     position: relative;
 
-    .blur-section{
-        .bg-layer-white{
-         background-color: rgba(255, 255, 255, 0.5);
-         border-radius: $RadiusFive;
-         z-index:1;
-         backdrop-filter: blur(2px);
+    .blur-section {
+        .bg-layer-white {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: $RadiusFive;
+            z-index: 1;
+            backdrop-filter: blur(2px);
         }
-     }
+    }
 
     .round-position {
         position: absolute;
@@ -303,7 +303,8 @@
 
 .login-form-main {
     height: 100vh;
-    overflow: hidden;
+    // overflow: hidden;
+    overflow-x: hidden;
     background-color: #f8f8f8;
 
     .lady-section {
@@ -327,17 +328,18 @@
         position: relative;
         border-radius: $RadiusFive;
 
-        .hey-hello{
-            h3{
-                font-size:48px;
-                font-weight:700;
+        .hey-hello {
+            h3 {
+                font-size: 48px;
+                font-weight: 700;
                 color: $lightBlack;
 
             }
-            p{
+
+            p {
                 color: $secondary;
-                font-size:20px;
-                font-weight:600;
+                font-size: 20px;
+                font-weight: 600;
 
             }
         }
@@ -379,7 +381,7 @@
         }
 
         .login-button {
-        
+
             border-bottom: 2px solid $borderColor;
 
         }
@@ -414,4 +416,3 @@
 
     }
 }
-

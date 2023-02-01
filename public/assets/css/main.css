@@ -11489,7 +11489,7 @@ textarea.form-control-lg {
 
 .login-form-main {
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #f8f8f8;
 }
 .login-form-main .lady-section .title-main {
