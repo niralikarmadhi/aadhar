@@ -21,7 +21,12 @@
                 font-weight: 600;
                 font-size: 18px;
                 margin-bottom: 10px !important;
+                height: 52px;
 
+
+                @include media-breakpoint-down(sm){
+                    font-size: 14px;
+                }
                 &.active {
                     color: #000;
                 }
@@ -57,7 +62,7 @@
                 }
 
                 &.active {
-                    span {
+                    label {
                         display: none;
                     }
 
@@ -98,11 +103,11 @@
                 &.active {
                     display: block;
 
-                    span {
+                    label {
                         font-size: 14px;
-                        line-height: 30px;
-                        color: #000;
                         height: 30px;
+                        line-height: 35px;
+                        color: #000;
                     }
                 }
 
