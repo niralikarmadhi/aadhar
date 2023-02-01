@@ -1,543 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home - Aadhar</title>
 
-        <!-- --- favicon --- -->
-        <link
-            rel="shortcut icon"
-            href="assets/images/favicon.png"
-            type="image/png"
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Aadhar</title>
 
-        <!-- --- Main --- -->
-        <link rel="stylesheet" href="assets/css/main.css" />
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand white-navbar" href="index.html">
-                            <img
-                                src="assets/images/logo-white.png"
-                                alt=""
-                                class="logo-white"
-                            />
-                        </a>
-                        <a class="navbar-brand black-navbar" href="index.html">
-                            <img
-                                src="assets/images/logo.png"
-                                alt=""
-                                class="logo-black"
-                            />
-                        </a>
-                        <button
-                            class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav"
-                            aria-controls="navbarNav"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div
-                            class="collapse justify-content-end navbar-collapse"
-                            id="navbarNav"
-                        >
-                            <ul class="navbar-nav">
-                                <li class="nav-item mx-4">
-                                    <a class="nav-link" href="login.html"
-                                        >Login / SignUp</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
+    <!-- --- favicon --- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
+
+    <!-- --- Main --- -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <header class="d-md-block d-none">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand white-navbar" href="index.html">
+                        <img src="assets/images/logo-white.png" alt="" class="logo-white" />
+                    </a>
+                    <a class="navbar-brand black-navbar" href="index.html">
+                        <img src="assets/images/logo.png" alt="" class="logo-black" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" href="login.html">Login / SignUp</a>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
-            </div>
-        </header>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-        <section class="hero-main">
-            <div class="container-fluid p-0">
-                <div class="row">
-                    <div class="col-lg-9 p-0">
-                        <div class="main-slider">
-                            <div
-                                class="main-bg position-relative"
-                                style="
+    <section class="hero-main">
+        <div class="container-fluid p-0">
+            <div class="row m-0">
+                <div class="col-lg-9 p-0">
+                    <div class="main-slider">
+                        <div class="main-bg position-relative" style="
                                     background-image: url(assets/images/slider-3.jpg);
-                                "
-                            >
-                                <img
-                                    src="assets/images/banner-layer.png"
-                                    alt=""
-                                    class="bg-layer position-absolute w-100 bottom-0"
-                                />
-                                <div class="inner-hero">
-                                    <h3 class="text-center">
-                                        Find Best Sevices
-                                    </h3>
-                                    <!-- <a href="login.html" class="texx-center">View All</a> -->
-                                </div>
+                                ">
+                            <img src="assets/images/banner-layer.png" alt=""
+                                class="bg-layer position-absolute w-100 bottom-0" />
+                            <div class="inner-hero">
+                                <h3 class="text-center">
+                                    Find Best Sevices
+                                </h3>
+                                <!-- <a href="login.html" class="texx-center">View All</a> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 p-0">
-                        <div class="bg-find-services">
-                            <h3>Benefits to join us</h3>
-                            <p>
-                                Enter New Employee Aadhar No. and get
-                                Information about Employee & previous Company
-                                Review
-                            </p>
-                            <p>
-                                Choose Right and Dedicated Employee for your
-                                Company.
-                            </p>
-                            <a href="register.html">Register</a>
-                        </div>
+                </div>
+                <div class="col-lg-3 p-0">
+                    <div class="bg-find-services">
+                        <h3>Benefits to join us</h3>
+                        <p>
+                            Enter New Employee Aadhar No. and get
+                            Information about Employee & previous Company
+                            Review
+                        </p>
+                        <p>
+                            Choose Right and Dedicated Employee for your
+                            Company.
+                        </p>
+                        <a href="register.html">Register</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="hero-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h3 class="welcome-msg">
-                            <span class="d-flex align-items-center">
-                                <span id="text"></span>
-                                <div id="cursor"></div>
-                            </span>
-                            Aadhar User
-                        </h3>
-                    </div>
-                    <div
-                        class="bg-hero blur-section position-relative"
-                        style="
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="welcome-msg">
+                        <span class="d-flex align-items-center">
+                            <span id="text"></span>
+                            <div id="cursor"></div>
+                        </span>
+                        Aadhar User
+                    </h3>
+                </div>
+                <div class="bg-hero blur-section position-relative" style="
                             background-image: url('assets/images/bg-main.png');
-                        "
-                    >
-                        <div
-                            class="bg-layer-white position-absolute w-100 h-100 top-0 start-0"
-                        ></div>
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="hero-content">
-                                    <h3>Register New <b>Employee</b></h3>
-                                    <a
-                                        href="#"
-                                        class="theme-button radius-normal"
-                                        >Add New</a
-                                    >
-                                </div>
+                        ">
+                    <div class="bg-layer-white position-absolute w-100 h-100 top-0 start-0"></div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="hero-content">
+                                <h3>Register New <b>Employee</b></h3>
+                                <a href="#" class="theme-button radius-normal">Add New</a>
                             </div>
-                            <div class="col-lg-4 position-relative">
-                                <img
-                                    src="assets/images/lady.png"
-                                    alt=""
-                                    class="image-lady"
-                                />
-                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="assets/images/lady.png" alt="" class="image-lady" />
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="team-member position-relative">
-            <div class="container">
-                <div
-                    class="d-flex align-items-center justify-content-between main-title position-relative"
-                >
-                    <h3>Employee List</h3>
-                    <div class="d-flex align-items-center">
-                        <div>
-                            <div class="slider--prev d-inline-block"></div>
-                            <div class="slider--next d-inline-block"></div>
-                        </div>
+    <section class="team-member position-relative">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between main-title position-relative">
+                <h3>Employee List</h3>
+                <div class="d-flex align-items-center">
+                    <div>
+                        <div class="slider--prev d-inline-block"></div>
+                        <div class="slider--next d-inline-block"></div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 team-slider">
-                        <div class="single-team-member">
-                            <a href="#" class="d-inline-block">
-                                <img src="assets/images/female.png" alt="" />
-                                <h5>Lori N. Masters</h5>
-                                <p>LoriNMasters@codexive.com</p>
-                            </a>
-                        </div>
-                        <div class="single-team-member">
-                            <a href="#" class="d-inline-block">
-                                <img src="assets/images/1female.png" alt="" />
-                                <h5>Lori N. Masters</h5>
-                                <p>LoriNMasters@codexive.com</p>
-                            </a>
-                        </div>
-                        <div class="single-team-member">
-                            <a href="#" class="d-inline-block">
-                                <img src="assets/images/2female.png" alt="" />
-                                <h5>Lori N. Masters</h5>
-                                <p>LoriNMasters@codexive.com</p>
-                            </a>
-                        </div>
-                        <div class="single-team-member">
-                            <a href="#" class="d-inline-block">
-                                <img src="assets/images/3female.png" alt="" />
-                                <h5>Lori N. Masters</h5>
-                                <p>LoriNMasters@codexive.com</p>
-                            </a>
-                        </div>
-                        <div class="single-team-member">
-                            <a href="#" class="d-inline-block">
-                                <img src="assets/images/4female.png" alt="" />
-                                <h5>Lori N. Masters</h5>
-                                <p>LoriNMasters@codexive.com</p>
-                            </a>
-                        </div>
-                        <div class="single-team-member">
-                            <a href="#" class="d-inline-block">
-                                <img src="assets/images/5female.png" alt="" />
-                                <h5>Lori N. Masters</h5>
-                                <p>LoriNMasters@codexive.com</p>
-                            </a>
-                        </div>
-                        <div class="single-team-member">
-                            <a href="#" class="d-inline-block">
-                                <img src="assets/images/6female.png" alt="" />
-                                <h5>Lori N. Masters</h5>
-                                <p>LoriNMasters@codexive.com</p>
-                            </a>
-                        </div>
-                        <div class="single-team-member">
-                            <a href="#" class="d-inline-block">
-                                <img src="assets/images/7female.png" alt="" />
-                                <h5>Lori N. Masters</h5>
-                                <p>LoriNMasters@codexive.com</p>
-                            </a>
-                        </div>
-                        <div class="single-team-member">
-                            <a href="#" class="d-inline-block">
-                                <img src="assets/images/8female.png" alt="" />
-                                <h5>Lori N. Masters</h5>
-                                <p>LoriNMasters@codexive.com</p>
-                            </a>
-                        </div>
-                        <div class="single-team-member">
-                            <a href="#" class="d-inline-block">
-                                <img src="assets/images/5female.png" alt="" />
-                                <h5>Lori N. Masters</h5>
-                                <p>LoriNMasters@codexive.com</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="search-section">
-            <img
-                src="assets/images/round-1.png"
-                alt=""
-                class="round-position"
-            />
-            <div class="container">
-                <div class="row">
-                    <div class="col-7 ms-auto">
-                        <h3 class="welcome-msg">
-                            Find for Your Company
-
-                            <span class="d-flex align-items-center">
-                                <span id="text2"></span>
-                                <div id="cursor2"></div>
-                            </span>
-                        </h3>
-                    </div>
-                    <div
-                        class="bg-hero blur-section position-relative"
-                        style="
-                            background-image: url('assets/images/bg-main2.png');
-                        "
-                    >
-                        <div
-                            class="bg-layer-white position-absolute w-100 h-100 top-0 start-0"
-                        ></div>
-                        <div class="row">
-                            <div class="col-lg-4 position-relative">
-                                <img
-                                    src="assets/images/search-emp.png"
-                                    alt=""
-                                    class="image-lady"
-                                />
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="hero-content text-end">
-                                    <h3>Find a Employee<b>Details</b></h3>
-                                    <a
-                                        href="#"
-                                        class="theme-button radius-normal"
-                                        >Add New</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonial">
-            <div class="container">
-                <div class="row position-relative">
-                    <div class="slider--prev3 d-inline-block"></div>
-                    <div class="slider--next3 d-inline-block"></div>
-                    <div class="col-lg-10 mx-auto">
-                        <div class="testimonial-slider">
-                            <div class="testimonial-content">
-                                <h3 class="text-center">
-                                    <q>
-                                        Rock stars love Cuban heels because a
-                                        lot of them tend to be diminutive. And
-                                        I've never met a man who doesn't mind
-                                        having an extra inch or two anywhere on
-                                        his body.
-                                    </q>
-                                </h3>
-                                <div
-                                    class="testimonial-details mt-4 d-flex align-items-center justify-content-center"
-                                >
-                                    <img
-                                        src="assets/images/5female.png"
-                                        alt=""
-                                        class="me-3"
-                                    />
-                                    <div>
-                                        <h5>Sanjay Vekariya</h5>
-                                        <p>Karmadhi Solutions</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="testimonial-content">
-                                <h3 class="text-center">
-                                    <q>
-                                        Rock stars love Cuban heels because a
-                                        lot of them tend to be diminutive. And
-                                        I've never met a man who doesn't mind
-                                        having an extra inch or two anywhere on
-                                        his body.
-                                    </q>
-                                </h3>
-                                <div
-                                    class="testimonial-details mt-4 d-flex align-items-center justify-content-center"
-                                >
-                                    <img
-                                        src="assets/images/8female.png"
-                                        alt=""
-                                        class="me-3"
-                                    />
-                                    <div>
-                                        <h5>Nirali Patel</h5>
-                                        <p>Karmadhi Solutions</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="testimonial-content">
-                                <h3 class="text-center">
-                                    <q>
-                                        Rock stars love Cuban heels because a
-                                        lot of them tend to be diminutive. And
-                                        I've never met a man who doesn't mind
-                                        having an extra inch or two anywhere on
-                                        his body.
-                                    </q>
-                                </h3>
-                                <div
-                                    class="testimonial-details mt-4 d-flex align-items-center justify-content-center"
-                                >
-                                    <img
-                                        src="assets/images/6female.png"
-                                        alt=""
-                                        class="me-3"
-                                    />
-                                    <div>
-                                        <h5>Karan Patel</h5>
-                                        <p>Karmadhi Solutions</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="testimonial-content">
-                                <h3 class="text-center">
-                                    <q>
-                                        Rock stars love Cuban heels because a
-                                        lot of them tend to be diminutive. And
-                                        I've never met a man who doesn't mind
-                                        having an extra inch or two anywhere on
-                                        his body.
-                                    </q>
-                                </h3>
-                                <div
-                                    class="testimonial-details mt-4 d-flex align-items-center justify-content-center"
-                                >
-                                    <img
-                                        src="assets/images/7female.png"
-                                        alt=""
-                                        class="me-3"
-                                    />
-                                    <div>
-                                        <h5>Nirav Chalala</h5>
-                                        <p>Karmadhi Solutions</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="join-us">
-            <div class="container">
-                <div class="main-title">
-                    <h3 class="text-center">Our Clients</h3>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 logo-slider">
-                        <div class="p-3">
-                            <img
-                                src="./assets/images/logo.1.png"
-                                alt=""
-                                class="w-100"
-                            />
-                        </div>
-                        <div class="p-3">
-                            <img
-                                src="./assets/images/logo.8.png"
-                                alt=""
-                                class="w-100"
-                            />
-                        </div>
-                        <div class="p-3">
-                            <img
-                                src="./assets/images/logo.2.png"
-                                alt=""
-                                class="w-100"
-                            />
-                        </div>
-                        <div class="p-3">
-                            <img
-                                src="./assets/images/logo.3.png"
-                                alt=""
-                                class="w-100"
-                            />
-                        </div>
-                        <div class="p-3">
-                            <img
-                                src="./assets/images/logo.4.png"
-                                alt=""
-                                class="w-100"
-                            />
-                        </div>
-                        <div class="p-3">
-                            <img
-                                src="./assets/images/logo.5.png"
-                                alt=""
-                                class="w-100"
-                            />
-                        </div>
-                        <div class="p-3">
-                            <img
-                                src="./assets/images/logo.6.png"
-                                alt=""
-                                class="w-100"
-                            />
-                        </div>
-                        <div class="p-3">
-                            <img
-                                src="./assets/images/logo.7.png"
-                                alt=""
-                                class="w-100"
-                            />
-                        </div>
-                        <div class="p-3">
-                            <img
-                                src="./assets/images/logo.7.jpg"
-                                alt=""
-                                class="w-100"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <a href="#">
-                            <img src="assets/images/logo-white.png" alt="" />
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 team-slider">
+                    <div class="single-team-member">
+                        <a href="#" class="d-inline-block">
+                            <img src="assets/images/female.png" alt="" />
+                            <h5>Lori N. Masters</h5>
+                            <p>LoriNMasters@codexive.com</p>
                         </a>
                     </div>
-                    <div class="col-md-8 mt-3">
-                        <p class="title-main">Address & Contact Details</p>
-                        <div class="our-details mt-4">
-                            <p class="mb-3">Surat, Gujarat 395006</p>
-                            <a href="" class="mb-3">InfoAadhar@gmail.com</a>
-                        </div>
+                    <div class="single-team-member">
+                        <a href="#" class="d-inline-block">
+                            <img src="assets/images/1female.png" alt="" />
+                            <h5>Lori N. Masters</h5>
+                            <p>LoriNMasters@codexive.com</p>
+                        </a>
                     </div>
-                    <div class="col-md-4 mt-3">
-                        <p class="title-main">Subscribe Us</p>
+                    <div class="single-team-member">
+                        <a href="#" class="d-inline-block">
+                            <img src="assets/images/2female.png" alt="" />
+                            <h5>Lori N. Masters</h5>
+                            <p>LoriNMasters@codexive.com</p>
+                        </a>
+                    </div>
+                    <div class="single-team-member">
+                        <a href="#" class="d-inline-block">
+                            <img src="assets/images/3female.png" alt="" />
+                            <h5>Lori N. Masters</h5>
+                            <p>LoriNMasters@codexive.com</p>
+                        </a>
+                    </div>
+                    <div class="single-team-member">
+                        <a href="#" class="d-inline-block">
+                            <img src="assets/images/4female.png" alt="" />
+                            <h5>Lori N. Masters</h5>
+                            <p>LoriNMasters@codexive.com</p>
+                        </a>
+                    </div>
+                    <div class="single-team-member">
+                        <a href="#" class="d-inline-block">
+                            <img src="assets/images/5female.png" alt="" />
+                            <h5>Lori N. Masters</h5>
+                            <p>LoriNMasters@codexive.com</p>
+                        </a>
+                    </div>
+                    <div class="single-team-member">
+                        <a href="#" class="d-inline-block">
+                            <img src="assets/images/6female.png" alt="" />
+                            <h5>Lori N. Masters</h5>
+                            <p>LoriNMasters@codexive.com</p>
+                        </a>
+                    </div>
+                    <div class="single-team-member">
+                        <a href="#" class="d-inline-block">
+                            <img src="assets/images/7female.png" alt="" />
+                            <h5>Lori N. Masters</h5>
+                            <p>LoriNMasters@codexive.com</p>
+                        </a>
+                    </div>
+                    <div class="single-team-member">
+                        <a href="#" class="d-inline-block">
+                            <img src="assets/images/8female.png" alt="" />
+                            <h5>Lori N. Masters</h5>
+                            <p>LoriNMasters@codexive.com</p>
+                        </a>
+                    </div>
+                    <div class="single-team-member">
+                        <a href="#" class="d-inline-block">
+                            <img src="assets/images/5female.png" alt="" />
+                            <h5>Lori N. Masters</h5>
+                            <p>LoriNMasters@codexive.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div class="position-relative mt-4">
-                            <a href="#" class="play-button"
-                                ><img src="assets/images/play-button.png"
-                            /></a>
-                            <input placeholder="Enter Email" />
+    <section class="search-section">
+        <img src="assets/images/round-1.png" alt="" class="round-position d-lg-block d-none" />
+        <div class="container">
+            <div class="row">
+                <div class="col-7 ms-auto">
+                    <h3 class="welcome-msg">
+                        Find for Your Company
+
+                        <span class="d-flex align-items-center">
+                            <span id="text2"></span>
+                            <div id="cursor2"></div>
+                        </span>
+                    </h3>
+                </div>
+                <div class="bg-hero blur-section position-relative" style="
+                            background-image: url('assets/images/bg-main2.png');
+                        ">
+                    <div class="bg-layer-white position-absolute w-100 h-100 top-0 start-0"></div>
+                    <div class="row">
+                        <div class="col-lg-4 ">
+                            <img src="assets/images/search-emp.png" alt="" class="image-lady" />
                         </div>
-
-                        <div class="social-media text-end mt-3">
-                            <a href="#"
-                                ><img src="assets/images/facebook.png"
-                            /></a>
-                            <a href="#"
-                                ><img src="assets/images/instagram.png"
-                            /></a>
-                            <a href="#"
-                                ><img src="assets/images/linkedin.png"
-                            /></a>
+                        <div class="col-lg-8">
+                            <div class="hero-content text-end">
+                                <h3>Find a Employee<b>Details</b></h3>
+                                <a href="#" class="theme-button radius-normal">Add New</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="credit-new py-4 mt-4">
-                <a href="#">Copyright © Aadhar Services</a>
+    <section class="testimonial mt-md-0 mt-5">
+        <div class="container">
+            <div class="row position-relative">
+                <div class="slider--prev3 d-inline-block"></div>
+                <div class="slider--next3 d-inline-block"></div>
+                <div class="col-lg-10 mx-auto">
+                    <div class="testimonial-slider">
+                        <div class="testimonial-content">
+                            <h3 class="text-center">
+                                <q>
+                                    Rock stars love Cuban heels because a
+                                    lot of them tend to be diminutive. And
+                                    I've never met a man who doesn't mind
+                                    having an extra inch or two anywhere on
+                                    his body.
+                                </q>
+                            </h3>
+                            <div class="testimonial-details mt-4 d-flex align-items-center justify-content-center">
+                                <img src="assets/images/5female.png" alt="" class="me-3" />
+                                <div>
+                                    <h5>Sanjay Vekariya</h5>
+                                    <p>Karmadhi Solutions</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-content">
+                            <h3 class="text-center">
+                                <q>
+                                    Rock stars love Cuban heels because a
+                                    lot of them tend to be diminutive. And
+                                    I've never met a man who doesn't mind
+                                    having an extra inch or two anywhere on
+                                    his body.
+                                </q>
+                            </h3>
+                            <div class="testimonial-details mt-4 d-flex align-items-center justify-content-center">
+                                <img src="assets/images/8female.png" alt="" class="me-3" />
+                                <div>
+                                    <h5>Nirali Patel</h5>
+                                    <p>Karmadhi Solutions</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-content">
+                            <h3 class="text-center">
+                                <q>
+                                    Rock stars love Cuban heels because a
+                                    lot of them tend to be diminutive. And
+                                    I've never met a man who doesn't mind
+                                    having an extra inch or two anywhere on
+                                    his body.
+                                </q>
+                            </h3>
+                            <div class="testimonial-details mt-4 d-flex align-items-center justify-content-center">
+                                <img src="assets/images/6female.png" alt="" class="me-3" />
+                                <div>
+                                    <h5>Karan Patel</h5>
+                                    <p>Karmadhi Solutions</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-content">
+                            <h3 class="text-center">
+                                <q>
+                                    Rock stars love Cuban heels because a
+                                    lot of them tend to be diminutive. And
+                                    I've never met a man who doesn't mind
+                                    having an extra inch or two anywhere on
+                                    his body.
+                                </q>
+                            </h3>
+                            <div class="testimonial-details mt-4 d-flex align-items-center justify-content-center">
+                                <img src="assets/images/7female.png" alt="" class="me-3" />
+                                <div>
+                                    <h5>Nirav Chalala</h5>
+                                    <p>Karmadhi Solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script>
-            $(window).scroll(function () {
-                var sticky = $("header"),
-                    scroll = $(window).scrollTop();
+    <section class="join-us">
+        <div class="container">
+            <div class="main-title">
+                <h3 class="text-center">Our Clients</h3>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 logo-slider">
+                    <div class="p-3">
+                        <img src="./assets/images/logo.1.png" alt="" class="w-100" />
+                    </div>
+                    <div class="p-3">
+                        <img src="./assets/images/logo.8.png" alt="" class="w-100" />
+                    </div>
+                    <div class="p-3">
+                        <img src="./assets/images/logo.2.png" alt="" class="w-100" />
+                    </div>
+                    <div class="p-3">
+                        <img src="./assets/images/logo.3.png" alt="" class="w-100" />
+                    </div>
+                    <div class="p-3">
+                        <img src="./assets/images/logo.4.png" alt="" class="w-100" />
+                    </div>
+                    <div class="p-3">
+                        <img src="./assets/images/logo.5.png" alt="" class="w-100" />
+                    </div>
+                    <div class="p-3">
+                        <img src="./assets/images/logo.6.png" alt="" class="w-100" />
+                    </div>
+                    <div class="p-3">
+                        <img src="./assets/images/logo.7.png" alt="" class="w-100" />
+                    </div>
+                    <div class="p-3">
+                        <img src="./assets/images/logo.7.jpg" alt="" class="w-100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#">
+                        <img src="assets/images/logo-white.png" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-8 mt-3">
+                    <p class="title-main">Address & Contact Details</p>
+                    <div class="our-details mt-4">
+                        <p class="mb-3">Surat, Gujarat 395006</p>
+                        <a href="" class="mb-3">InfoAadhar@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <p class="title-main">Subscribe Us</p>
 
-                if (scroll >= 50) sticky.addClass("header-fixed");
-                else sticky.removeClass("header-fixed");
-            });
-        </script>
-    </body>
+                    <div class="position-relative mt-4">
+                        <a href="#" class="play-button"><img src="assets/images/play-button.png" /></a>
+                        <input placeholder="Enter Email" />
+                    </div>
+
+                    <div class="social-media text-md-end  text-center mt-3">
+                        <a href="#"><img src="assets/images/facebook.png" /></a>
+                        <a href="#"><img src="assets/images/instagram.png" /></a>
+                        <a href="#"><img src="assets/images/linkedin.png" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit-new py-4 mt-4">
+            <a href="#">Copyright © Aadhar Services</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(window).scroll(function () {
+            var sticky = $("header"),
+                scroll = $(window).scrollTop();
+
+            if (scroll >= 50) sticky.addClass("header-fixed");
+            else sticky.removeClass("header-fixed");
+        });
+    </script>
+</body>
+
 </html>

@@ -1,8 +1,23 @@
 .hero-section {
     margin-top: 80px;
 
+    @include media-breakpoint-down(md) {
+        margin-top: 40px;
+
+    }
+
     .welcome-msg {
         font-size: 60px;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 36px;
+            padding-bottom: 30px;
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: 20px;
+            padding-bottom: 30px;
+        }
 
         #cursor {
             display: inline-block;
@@ -11,12 +26,28 @@
             height: 50px;
             background-color: $secondary;
             animation: blink .75s step-end infinite;
+
+            @include media-breakpoint-down(lg) {
+                height: 36px;
+            }
+
+            @include media-breakpoint-down(md) {
+                height: 20px;
+            }
         }
 
         #text {
             color: $secondary;
             display: block;
             height: 72px;
+
+            @include media-breakpoint-down(lg) {
+                height: 36px;
+            }
+
+            @include media-breakpoint-down(md) {
+                height: 25px;
+            }
         }
 
     }
@@ -36,11 +67,35 @@
         padding: 100px 120px;
         border-radius: $radius-normal;
 
+        @include media-breakpoint-down(lg) {
+            padding: 50px;
+        }
+
+        @media (max-width:400px) {
+            padding: 30px;
+
+        }
+
         .hero-content {
             h3 {
                 font-size: 50px;
                 color: $lightBlack;
                 line-height: 65px;
+
+                @include media-breakpoint-down(lg) {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+
+                @include media-breakpoint-down(lg) {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+
+                @media (max-width:400px) {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
 
                 b {
                     display: block;
@@ -50,9 +105,15 @@
 
         .image-lady {
             position: absolute;
-            width: 100%;
-            top: -290px;
+            width: 25%;
+            // top: -290px;
+            bottom: 0;
             z-index: 2;
+
+            @include media-breakpoint-down(md) {
+                width: 40%;
+                right: 5px;
+            }
         }
     }
 }
@@ -129,6 +190,15 @@
     margin-bottom: 80px;
     position: relative;
 
+    @include media-breakpoint-down(lg) {
+        margin-top: 100px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+
     .blur-section {
         .bg-layer-white {
             background-color: rgba(255, 255, 255, 0.5);
@@ -148,6 +218,16 @@
     .welcome-msg {
         font-size: 60px;
 
+        @include media-breakpoint-down(lg) {
+            font-size: 36px;
+            padding-bottom: 30px;
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+
         #cursor2 {
             display: inline-block;
             vertical-align: middle;
@@ -155,12 +235,28 @@
             height: 50px;
             background-color: $secondary;
             animation: blink .75s step-end infinite;
+
+            @include media-breakpoint-down(lg) {
+                height: 36px;
+            }
+
+            @include media-breakpoint-down(md) {
+                height: 20px;
+            }
         }
 
         #text2 {
             color: $secondary;
             display: block;
             height: 72px;
+
+            @include media-breakpoint-down(lg) {
+                height: 36px;
+            }
+
+            @include media-breakpoint-down(md) {
+                height: 20px;
+            }
         }
     }
 
@@ -170,11 +266,35 @@
         padding: 100px 120px;
         border-radius: $radius-normal;
 
+        @include media-breakpoint-down(lg) {
+            padding: 50px;
+        }
+
+        @media (max-width:400px) {
+            padding: 30px;
+
+        }
+
         .hero-content {
             h3 {
                 font-size: 50px;
                 color: $lightBlack;
                 line-height: 65px;
+
+                @include media-breakpoint-down(lg) {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+
+                @include media-breakpoint-down(md) {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+
+                @media (max-width:400px) {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
 
                 b {
                     display: block;
@@ -184,9 +304,15 @@
 
         .image-lady {
             position: absolute;
-            width: 100%;
-            top: -350px;
+            width: 25%;
+            // top: -350px;
+            bottom: 0;
             z-index: 1;
+
+            @include media-breakpoint-down(md) {
+                width: 40%;
+                left: 5px;
+            }
         }
     }
 }
@@ -196,11 +322,23 @@
     padding-bottom: 80px;
     background-color: #CCF0BF;
 
+    @include media-breakpoint-down(sm) {
+        padding: 50px 0
+    }
+
     .testimonial-content {
         h3 {
             color: $lightBlack;
             font-size: 24px;
             font-weight: 600;
+
+            @include media-breakpoint-down(md) {
+                font-size: 18px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 14px;
+            }
         }
 
         .testimonial-details {
@@ -208,18 +346,31 @@
                 width: 60px;
                 height: 60px;
                 border-radius: 5px;
+
+                @include media-breakpoint-down(sm) {
+                    width: 40px;
+                    height: 40px;
+                }
             }
 
             h5 {
                 font-size: 20px;
                 color: $lightBlack;
                 font-weight: 700;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 14px;
+                }
             }
 
             p {
                 font-size: 14px;
                 color: $lightBlack;
                 font-weight: 500;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -233,15 +384,43 @@
             background-size: cover;
             background-position: center center;
 
+
+            @include media-breakpoint-down(lg) {
+                height: 400px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                height: 250px;
+            }
+
+
+
             .inner-hero {
                 padding-top: 250px;
                 text-align: center;
+
+                @include media-breakpoint-down(lg) {
+                    padding-top: 150px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    padding-top: 120px;
+                }
+                // @media (max-width:380px) {
+                //     padding-top: 70px;
+                // }
+
 
                 h3 {
                     color: $white;
                     font-size: 65px;
                     font-weight: 700;
                     position: relative;
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 40px;
+
+                    }
                 }
 
                 a {
@@ -270,10 +449,25 @@
         height: 650px;
         padding: 150px 60px 0 60px;
 
+        @include media-breakpoint-down(lg) {
+            height: 400px;
+            padding: 80px 60px 0 60px;
+            text-align: center;
+        }
+
+        @include media-breakpoint-down(sm) {
+            height: max-content;
+            padding: 30px;
+        }
+
         h3 {
             color: $white;
             font-size: 40px;
             margin-bottom: 20px;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 24px;
+            }
         }
 
         p {
@@ -281,6 +475,9 @@
             font-size: 16px;
             margin-bottom: 20px;
 
+            @include media-breakpoint-down(sm) {
+                font-size: 14px;
+            }
         }
 
         a {
@@ -294,6 +491,14 @@
             border-radius: 5px;
             margin-bottom: 40px;
 
+            @include media-breakpoint-down(lg) {
+                width: max-content;
+                margin: 0 auto;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 14px;
+                padding: 10px;
+            }
         }
 
     }
@@ -401,6 +606,10 @@
 
 .join-us {
     padding: 80px 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 40px 0;
+    }
 
     .main-title {
         margin-bottom: 20px;
